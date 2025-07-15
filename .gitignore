@@ -1,0 +1,65 @@
+.config/
+
+# dependencies
+/node_modules
+
+# production
+/build
+/dist
+/.next
+/out
+
+# misc
+.DS_Store
+.env
+.env.*     # for .env.development, .env.local etc.
+.npm
+*.log
+*.tgz
+
+# testing
+/coverage
+
+# editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# local tools
+/.eslintcache
+.cache/
+.next/
+.vercel/
+
+# typescript
+*.tsbuildinfo
+
+# lock files (optional: keep if you want consistent installs)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# output from Tailwind JIT or PostCSS (optional)
+*.css.map
+
+# storybook
+storybook-static
+
+# generated files
+*.local
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# others (optional)
+*.swp
+*.bak
+*.tmp
+*.old
