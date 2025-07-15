@@ -177,7 +177,7 @@ const TeamPage = () => {
     {[
       {
         name: "Nandini Kaushik",
-        img: "/images/Frame 1984078251.png",
+        img: "/images/image.png",
         imageHeight: "h-[225px] sm:h-[255px] md:h-[285px]",
         imgClass: "object-contain p-1 sm:p-1.5 md:p-2",
         marginTop: "mt-0",
