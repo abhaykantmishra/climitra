@@ -3,6 +3,7 @@ import ClimitraHeader from "./ClimitraHeader";
 import Footer from "./Footer";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import IntegrationCarousel from "./Industrial-Carousel";
+import RegulatoryTimeline from "./Industrial-Timeline";
 
 const IndustrialPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -218,257 +219,70 @@ const IndustrialPage = () => {
     </div>
 
       {/* CRITICAL REGULATORY TIMELINE SECTION */}
-      <div className="bg-white w-full h-[51.25rem] flex flex-col items-center justify-center px-[1rem]">
-        <div className="max-w-[80rem] w-full mx-auto">
-          {/* Section Title */}
-          <div className="text-center mb-[2.5rem] mt-0">
-            <div className="relative">
-              <h2 className="font-montserrat text-[2.25rem] font-semibold leading-[2.75rem] mb-[1.125rem]">
-                <span className="text-[#0C0C0C]">The </span>
-                <span className="text-[#1C6248]">Critical</span>
-                <span className="text-[#0C0C0C]"> Regulatory Timeline</span>
-              </h2>
-              <div className="w-[8.375rem] h-[0.25rem] bg-[#1C6248] mx-auto"></div>
-            </div>
-          </div>
 
-          {/* Timeline Container */}
-          <div className="relative w-[66.5625rem] h-[33.375rem] mx-auto mt-[5rem]">
-            {/* Main Timeline Line */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-[1065px] h-0 z-0">
-              <div className="w-full border-t-[4px] border-dashed border-[#1C6248] [border-image:repeating-linear-gradient(to_right,_#1C6248_0_19px,_transparent_19px_38px)_1] relative">
-                <div className="absolute right-[-1.25rem] top-[-0.825rem] w-0 h-0 border-l-[1.25rem] border-l-[#1C6248] border-t-[0.75rem] border-t-transparent border-b-[0.75rem] border-b-transparent"></div>
-              </div>
-            </div>
-
-            {/* 2026 */}
-            <div className="absolute left-[0.5rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
-              {/* Arrow Up */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(14.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
-                <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
-                <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
-              </div>
-
-              {/* Year Badge */}
-              <div className="absolute top-[14.1875rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-                <span className="text-white font-montserrat text-[1.625rem] font-semibold">
-                  2026
-                </span>
-              </div>
-
-              {/* Title */}
-              <div className="absolute left-0 top-[19.25rem] w-[13.625rem] h-[3.75rem] text-center">
-                <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                  CBAM Penalties Begin
-                </span>
-              </div>
-
-              {/* Top Content */}
-              <div className="absolute left-0 top-0 w-[14.25rem] h-[7.125rem]">
-                <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Carbon levy of $85-100 per tonne CO₂
-                  </p>
-                </div>
-                <div className="flex items-start gap-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    EU import taxes starting 1 January, 2026
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 2027 */}
-            <div className="absolute left-[15.375rem] top-[9.4375rem] w-[17.5625rem] h-[23.9375rem]">
-              {/* Arrow Down */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(5.9rem+3.375rem+1.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
-                <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
-                <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-t-[0.625rem] border-t-[#1C6248]"></div>
-              </div>
-
-              {/* Year Badge */}
-              <div className="absolute top-[5.9rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-                <span className="text-white font-montserrat text-[1.625rem] font-semibold">
-                  2027
-                </span>
-              </div>
-
-              {/* Title */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[0.625rem] w-[13.625rem] text-center">
-                <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                  CCTS Full Implementation
-                </span>
-              </div>
-
-              {/* Bottom Content */}
-              <div className="absolute left-0 top-[15.9125rem] w-[17.5625rem] h-[9.25rem]">
-                <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Mandatory for 9 heavy industries including steel
-                  </p>
-                </div>
-                <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Compliance cost $15-25/tonne
-                  </p>
-                </div>
-                <div className="flex items-start gap-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Unified registry for voluntary + compliance markets
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 2030 */}
-            <div className="absolute left-[31.625rem] top-0 w-[18.5625rem] h-[22.375rem]">
-              {/* Arrow Up */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(15.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
-                <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
-                <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
-              </div>
-
-              {/* Year Badge */}
-              <div className="absolute top-[15.1875rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-                <span className="text-white font-montserrat text-[1.625rem] font-semibold">
-                  2030
-                </span>
-              </div>
-
-              {/* Title */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[19.6875rem] w-[13.625rem] text-center">
-                <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                  NDC Emissions Targets
-                </span>
-              </div>
-
-              {/* Top Content */}
-              <div className="absolute left-0 top-0 w-[18.5625rem] h-[8.125rem]">
-                <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                    Overall 45% carbon intensity reduction over 2005 levels
-                  </p>
-                </div>
-                <div className="flex items-start gap-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                    Steel: ~50% intensity reduction via cleaner fuels, energy
-                    efficiency
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 2070 */}
-            <div className="absolute left-[48.6875rem] top-[11.3125rem] w-[18rem] h-[18.5625rem]">
-              {/* Arrow Down */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(4rem+3.375rem+1.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
-                <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
-                <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-t-[0.625rem] border-t-[#1C6248]"></div>
-              </div>
-
-              {/* Year Badge */}
-              <div className="absolute top-[4rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-                <span className="text-white font-montserrat text-[1.625rem] font-semibold">
-                  2070
-                </span>
-              </div>
-
-              {/* Title */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 top-[0.625rem] w-[13.625rem] text-center">
-                <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                  Net Zero India
-                </span>
-              </div>
-
-              {/* Bottom Content */}
-              <div className="absolute left-0 top-[14.0rem] w-[18rem] h-[5.75rem]">
-                <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Economy-wide carbon neutrality
-                  </p>
-                </div>
-                <div className="flex items-start gap-[0.625rem]">
-                  <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                  <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                    Hard-to-abate industries to drive ~40% of total cuts
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <RegulatoryTimeline />
 
       {/* BIOCHAR AS DECARBONIZATION LEVER SECTION */}
-      <div className="relative w-full h-[33.625rem] overflow-hidden bg-[linear-gradient(180deg,_#000000_-50%,_#000000_-27%)]">
-        {/* Background Image */}
-        <img
-          src="/images/back_img.png"
-          alt="Industrial Background"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-[#0C0C0C] opacity-55 z-1"></div>
+      <div className="relative w-full overflow-hidden bg-[linear-gradient(180deg,_#000000_-50%,_#000000_-27%)] py-12 md:py-20">
+      {/* Background Image */}
+      <img
+        src="/images/back_img.png"
+        alt="Industrial Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-[#0C0C0C] opacity-55 z-1"></div>
 
-        {/* Content */}
-        <div className="relative z-20 px-[4.375rem] py-[4.6875rem] max-w-[85rem] mx-auto flex flex-col gap-[4.6875rem]">
-          {/* Heading */}
-          <h2 className="text-white font-montserrat text-[2.5rem] leading-[3.3125rem] text-left h-[6.625rem] flex flex-col justify-center max-w-[52.3125rem]">
-            <span className="font-semibold">
-              Biochar as a Decarbonization Lever:
-            </span>
-            <span className="font-normal">The Perfect Coal Alternative</span>
-          </h2>
-          {/* Cards Row */}
-          <div className="flex gap-[3.125rem] items-start h-[14.875rem] mb-[4rem]">
-            {/* Left Card */}
-            <div
-              className="flex items-center justify-center p-[1.75rem_1.875rem] bg-[#0C0C0C6B] backdrop-blur-md rounded-[0.8125rem] w-[26.0625rem] h-[13.625rem]"
-              style={{ boxShadow: "4px 4px 100px 0 rgba(0, 0, 0, 0.25)" }}
-            >
-              <div className="text-center">
-                <img
-                  src="/images/Mask group (26).png"
-                  alt="Steel Icon"
-                  className="w-[5rem] h-auto mx-auto mb-[1.25rem]"
-                />
-                <h3 className="text-white font-montserrat font-semibold text-[1.375rem] leading-[120%] mb-[0.75rem]">
-                  32 million tons annual biochar demand potential
-                </h3>
+      {/* Content */}
+      <div className="relative z-20 max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8 md:gap-[4.6875rem]">
+        {/* Heading */}
+        <h2 className="text-white font-montserrat text-2xl sm:text-3xl md:text-[2.5rem] leading-tight md:leading-[3.3125rem] text-left max-w-full md:max-w-[52.3125rem]">
+          <span className="font-semibold">Biochar as a Decarbonization Lever:</span>
+          <br className="md:hidden" /> {/* Line break for mobile */}
+          <span className="font-normal">The Perfect Coal Alternative</span>
+        </h2>
 
-                <p className="text-[#6C6C6C] font-montserrat text-[1rem] font-bold leading-[120%]">
-                  (Ministry of Steel)
-                </p>
-              </div>
+        {/* Cards Row */}
+        <div className="flex flex-col md:flex-row gap-6 md:gap-[3.125rem] items-center md:items-start mb-8 md:mb-[4rem]">
+          {/* Left Card */}
+          <div
+            className="flex items-center justify-center p-4 sm:p-[1.75rem_1.875rem] bg-[#0C0C0C6B] backdrop-blur-md rounded-[0.8125rem] w-full md:w-[26.0625rem] h-auto min-h-[10rem] md:h-[13.625rem]"
+            style={{ boxShadow: "4px 4px 100px 0 rgba(0, 0, 0, 0.25)" }}
+          >
+            <div className="text-center">
+              <img
+                src="/images/Mask group (26).png"
+                alt="Steel Icon"
+                className="w-16 h-auto mx-auto mb-4 sm:w-[5rem] sm:mb-[1.25rem]"
+              />
+              <h3 className="text-white font-montserrat font-semibold text-lg sm:text-xl md:text-[1.375rem] leading-[120%] mb-2 sm:mb-[0.75rem]">
+                32 million tons annual biochar demand potential
+              </h3>
+              <p className="text-[#6C6C6C] font-montserrat text-sm sm:text-base md:text-[1rem] font-bold leading-[120%]">
+                (Ministry of Steel)
+              </p>
             </div>
+          </div>
 
-            {/* Right Card */}
-            <div
-              className="flex items-center justify-center p-[1.75rem_2.875rem_3.5625rem_2.875rem] bg-[#0C0C0C6B] backdrop-blur-md rounded-[0.8125rem] w-[26.0625rem] h-[13.625rem]"
-              style={{ boxShadow: "4px 4px 100px 0 rgba(0, 0, 0, 0.25)" }}
-            >
-              <div className="text-center">
-                <img
-                  src="/images/Mask group (27).png"
-                  alt="Emissions Icon"
-                  className="w-[5rem] h-auto mx-auto mb-[1.25rem]"
-                />
-                <h3 className="text-white font-montserrat font-semibold text-[1.375rem] leading-[120%] mb-[0.75rem]">
-                  Up to 50% emissions reduction
-                </h3>
-              </div>
+          {/* Right Card */}
+          <div
+            className="flex items-center justify-center p-4 sm:p-[1.75rem_2.875rem_3.5625rem_2.875rem] bg-[#0C0C0C6B] backdrop-blur-md rounded-[0.8125rem] w-full md:w-[26.0625rem] h-auto min-h-[10rem] md:h-[13.625rem]"
+            style={{ boxShadow: "4px 4px 100px 0 rgba(0, 0, 0, 0.25)" }}
+          >
+            <div className="text-center">
+              <img
+                src="/images/Mask group (27).png"
+                alt="Emissions Icon"
+                className="w-16 h-auto mx-auto mb-4 sm:w-[5rem] sm:mb-[1.25rem]"
+              />
+              <h3 className="text-white font-montserrat font-semibold text-lg sm:text-xl md:text-[1.375rem] leading-[120%] mb-2 sm:mb-[0.75rem]">
+                Up to 50% emissions reduction
+              </h3>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
   {/* SEAMLESS INTEGRATION SECTION */}
   <IntegrationCarousel />
@@ -630,7 +444,7 @@ const IndustrialPage = () => {
 </div>
 
       {/* WHY CLIMITRA SECTION */}
-      <div className="relative w-full h-[24.0625rem] overflow-hidden">
+       <div className="relative w-full h-[24.0625rem] overflow-hidden">
         <img
           src="/images/image 105.png"
           alt="Why Climitra Background"
@@ -638,14 +452,12 @@ const IndustrialPage = () => {
         />
         <div className="absolute inset-0 bg-[#0C0C0C] opacity-60 z-10"></div>
 
-        <div className="relative z-20 flex flex-col items-center justify-center h-full px-[20.0625rem]">
+        <div className="relative z-20 flex flex-col items-center justify-center h-full px-2">
           <div className="text-center">
             <h2
               className="font-montserrat"
               style={{
                 color: '#FFFFFF',
-                width: '291px',
-                height: '48px',
                 fontWeight: 600,
                 fontStyle: 'normal',
                 fontSize: '40px',
@@ -661,48 +473,48 @@ const IndustrialPage = () => {
               Why Climitra?
             </h2>
             <p
-              className="font-sofia"
+              className="font-sofia text-xl md:text-2xl lg:text-3xl text-center text-semibold text-white"
               style={{
-                color: '#FFFFFF',
-                width: '688px',
-                height: '22px',
-                fontFamily: 'Sofia Pro, sans-serif',
-                fontWeight: 400,
-                fontStyle: 'normal',
-                fontSize: '22px',
-                lineHeight: '22px',
-                letterSpacing: '0',
-                marginBottom: '0.875rem',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                textAlign: 'center',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+              //   color: '#FFFFFF',
+              //   width: '688px',
+              //   height: '22px',
+              //   fontFamily: 'Sofia Pro, sans-serif',
+              //   fontWeight: 400,
+              //   fontStyle: 'normal',
+              //   fontSize: '22px',
+                // lineHeight: '22px',
+              //   letterSpacing: '0',
+              //   marginBottom: '0.875rem',
+              //   marginLeft: 'auto',
+              //   marginRight: 'auto',
+              //   textAlign: 'center',
+              //   display: 'flex',
+              //   alignItems: 'center',
+              //   justifyContent: 'center',
               }}
             >
               Industrial-grade biochar engineered for steel and cement industries.
             </p>
-            <p className="text-white font-sofia text-[1.375rem] font-bold mb-[2.9375rem]">
+            <p className="font-sofia text-xl md:text-2xl lg:text-3xl text-center text-semibold text-white">
               <span
                 style={{
-                  color: '#FFFFFF',
-                  width: '328px',
-                  height: '22px',
-                  fontFamily: 'Sofia Pro, sans-serif',
-                  fontWeight: 400,
-                  fontStyle: 'normal',
-                  fontSize: '22px',
-                  lineHeight: '22px',
-                  letterSpacing: '0',
-                  display: 'inline-block',
-                  textAlign: 'center',
+                  // color: '#FFFFFF',
+                  // width: '328px',
+                  // height: '22px',
+                  // fontFamily: 'Sofia Pro, sans-serif',
+                  // fontWeight: 400,
+                  // fontStyle: 'normal',
+                  // fontSize: '22px',
+                  // lineHeight: '22px',
+                  // letterSpacing: '0',
+                  // display: 'inline-block',
+                  // textAlign: 'center',
                 }}
               >
                 Proven globally. Ready for India.
               </span>
             </p>
-            <button className="bg-[#1C6248] text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
+            <button className="bg-[#1C6248] my-5 md:my-10 text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
               <span
                 style={{
                   color: '#FFFFFF',
