@@ -10,6 +10,13 @@ const ClimitraHeader = ({
   customContactButton = null,
   zIndex = 10 
 }) => {
+
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
+
   return (
     <>
       {/* HEADER */}
@@ -17,9 +24,10 @@ const ClimitraHeader = ({
         <div className="flex items-center w-full">
           {/* Logo */}
           <img
+            onClick={() => handleNavigation("home")}
             src="/images/mask-group.svg"
             alt="Climitra Logo"
-            className="w-16 sm:w-20 md:w-24 lg:w-28 h-auto object-contain"
+            className="w-16 sm:w-20 md:w-24 lg:w-28 h-auto object-contain hover:cursor-pointer"
           />
 
           {/* Navbar */}
