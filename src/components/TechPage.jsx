@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-// import ClimitraHeader from "./ClimitraHeader"; // Assuming external component
-// import Footer from "./Footer"; // Assuming external component
+import ClimitraHeader from "./ClimitraHeader";
+import Footer from "./Footer"; 
 
 const TechPage = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -48,7 +48,8 @@ const TechPage = () => {
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-[#1C6248E5] to-[#00000000] z-10" />
-        {/* <ClimitraHeader
+
+        <ClimitraHeader
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
           menuItems={[
@@ -60,7 +61,8 @@ const TechPage = () => {
           ]}
           showContactButton={true}
           zIndex={20}
-        /> */}
+        />
+
         {/* HERO TEXT */}
         <div className="absolute inset-0 flex items-center justify-center z-20 px-4 pointer-events-none">
           <h1 className="font-montserrat text-white text-center font-semibold text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl mx-auto pointer-events-auto">
@@ -844,7 +846,7 @@ const TechPage = () => {
           </div>
         </div>
       </div>
-      {/* <Footer /> */} {/* Assuming external component */}
+      <Footer />
     </div>
   )
 }
