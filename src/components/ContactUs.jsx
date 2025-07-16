@@ -262,9 +262,10 @@ const ContactUs = () => {
         </div>
 
         {/* Map Image */}
-        <div className="w-full max-w-[87.5rem] mt-20 px-[4.625rem]">
+        <div onClick={() => window.open("https://maps.app.goo.gl/sJSt85AEMWZXvdiC8", "_blank")} className="w-full max-w-[87.5rem] mt-20 px-[4.625rem]">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/f167d9867927ada272a98440ff3a574a80937bbc?width=2289"
+            src="/images/map_new.png"
+            // src="https://api.builder.io/api/v1/image/assets/TEMP/f167d9867927ada272a98440ff3a574a80937bbc?width=2289"
             alt="Map"
             className="w-full h-[18.75rem] object-cover rounded-[1.125rem]"
           />
