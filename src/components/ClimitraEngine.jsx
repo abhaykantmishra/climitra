@@ -425,7 +425,7 @@ function ClimitraEngine() {
                 }}>
                   We generate high-integrity carbon removal credits through a digital MRV framework, enabling 100+ year carbon sequestration and access to both voluntary and compliance markets.
                 </p>
-                <button onClick={() => {handleNavigation("cdr")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("cdr")}} className="hover:cursor-pointer  bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -584,7 +584,7 @@ function ClimitraEngine() {
                     </p>
                   </div>
                 </div>
-                <div onClick={() => handleNavigation(card?.link)} className="flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
+                <div onClick={() => handleNavigation(card?.link)} className="hover:cursor-pointer  flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
                   <span>{card.cta}</span>
                   <img
                     src={card.arrow}

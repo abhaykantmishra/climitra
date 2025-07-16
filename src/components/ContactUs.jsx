@@ -121,7 +121,7 @@ const ContactUs = () => {
               </div>
 
               {/* Address */}
-              <div className="flex items-center gap-[1.125rem]">
+              <div onClick={() => window.open("https://maps.app.goo.gl/sJSt85AEMWZXvdiC8", "_blank")} className="hover:cursor-pointer flex items-center gap-[1.125rem]">
                 <div className="w-[3.875rem] h-[3.875rem] min-w-[3.875rem] bg-climitra-green rounded-full flex items-center justify-center">
                   <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
                     <path
@@ -133,13 +133,13 @@ const ContactUs = () => {
                 <div>
                   <h3 className="text-climitra-green font-montserrat font-semibold text-[1.5rem] leading-[2.125rem]">Address</h3>
                   <p className="text-climitra-text font-montserrat font-semibold text-[1.25rem] leading-[1.775rem]">
-                    Sarvpriya Vihar, Hauz Khas, Delhi 110016, <br /> India
+                    Delhi, India
                   </p>
                 </div>
               </div>
 
               {/* LinkedIn */}
-              <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="flex items-center gap-[1.125rem]">
+              <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="hover:cursor-pointer flex items-center gap-[1.125rem]">
                 <div className="w-[3.875rem] h-[3.875rem] min-w-[3.875rem] bg-climitra-green rounded-full flex items-center justify-center">
                   <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
                     <path
@@ -262,7 +262,7 @@ const ContactUs = () => {
         </div>
 
         {/* Map Image */}
-        <div onClick={() => window.open("https://maps.app.goo.gl/sJSt85AEMWZXvdiC8", "_blank")} className="w-full max-w-[87.5rem] mt-20 px-[4.625rem]">
+        <div onClick={() => window.open("https://maps.app.goo.gl/sJSt85AEMWZXvdiC8", "_blank")} className="hover:cursor-pointer w-full max-w-[87.5rem] mt-20 px-[4.625rem]">
           <img
             src="/images/map_new.png"
             // src="https://api.builder.io/api/v1/image/assets/TEMP/f167d9867927ada272a98440ff3a574a80937bbc?width=2289"

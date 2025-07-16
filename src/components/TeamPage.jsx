@@ -19,7 +19,7 @@ const TeamPage = () => {
       {/* HERO SECTION */}
       <div className="relative w-full h-[38.1875rem] overflow-hidden">
         <img
-          src="/images/team.png"
+          src="/images/Team_bg.png"
           alt="Team Hero Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -159,7 +159,7 @@ const TeamPage = () => {
             }`}
           />
         </div>
-        <div onClick={() => window.open(member.linkedin, "_blank")} className="flex items-center gap-2 mb-1">
+        <div onClick={() => window.open(member.linkedin, "_blank")} className="hover:cursor-pointer flex items-center gap-2 mb-1">
           <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[1.5px] border-[#1C6248] rounded-[0.3125rem] p-[0.2rem] sm:p-[0.225rem] md:p-[0.25rem] flex items-center justify-center">
             <img
               src="/images/linkedin_teams.png"
@@ -220,7 +220,7 @@ const TeamPage = () => {
             className={`absolute w-full h-full ${member.imgClass}`}
           />
         </div>
-        <div onClick={() => window.open(member.linkedin, "_blank")} className="flex items-center gap-2 mb-1">
+        <div onClick={() => window.open(member.linkedin, "_blank")} className="hover:cursor-pointer flex items-center gap-2 mb-1">
           <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[1.5px] border-[#1C6248] rounded-[0.3125rem] p-[0.2rem] sm:p-[0.225rem] md:p-[0.25rem] flex items-center justify-center">
             <img
               src="/images/linkedin_teams.png"
@@ -270,7 +270,7 @@ const TeamPage = () => {
                 >
                   {/* LinkedIn + Name */}
                   <div
-                    onClick={() => window.open("https://www.linkedin.com/in/vikram-vishal-13242420/", "_blank")} className={`flex items-center gap-2 mb-2 ${isExpanded ? "justify-center" : "justify-center sm:justify-start"}`}
+                    onClick={() => window.open("https://www.linkedin.com/in/vikram-vishal-13242420/", "_blank")} className={`hover:cursor-pointer flex items-center gap-2 mb-2 ${isExpanded ? "justify-center" : "justify-center sm:justify-start"}`}
                   >
                     <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[0.09375rem] border-[#1C6248] rounded-[0.3125rem] flex items-center justify-center">
                       <img

@@ -152,7 +152,7 @@ function TimelineComponent() {
         `}</style>
 
         {/* Header */}
-        <div className="w-[37.5625rem] left-[21.1875rem] top-[5.0rem] absolute text-center justify-start">
+        <div className="w-[37.5625rem] left-[21.1875rem] top-[2.0rem] absolute text-center justify-start">
           <span className="text-neutral-950 text-4xl font-semibold font-['Montserrat'] leading-[3.125rem]">
             Behind the{" "}
           </span>
@@ -160,8 +160,8 @@ function TimelineComponent() {
             Climitra Engine
           </span>
         </div>
-        <div className="w-32 h-0 left-[35.8125rem] top-[9.25rem] absolute outline outline-2 outline-offset-[-0.125rem] outline-teal-800"></div>
-        <div className="w-[63.5rem] left-[8.25rem] top-[11.125rem] absolute text-center justify-center">
+        <div className="w-32 h-0 left-[35.8125rem] top-[5.75rem] absolute outline outline-2 outline-offset-[-0.125rem] outline-teal-800"></div>
+        <div className="w-[63.5rem] left-[8.25rem] top-[8.125rem] absolute text-center justify-center">
           <span className="text-neutral-500 text-xl font-normal font-['Montserrat'] leading-loose">Building a </span>
           <span className="text-teal-800 text-xl font-semibold font-['Montserrat'] leading-loose">
             vertically integrated ecosystem

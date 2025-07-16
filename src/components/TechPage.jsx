@@ -364,7 +364,7 @@ const TechPage = () => {
             <div className="relative flex flex-col justify-between h-full min-h-[300px] lg:min-h-[620px]">
               <div className="flex justify-center items-center flex-1">
                 <img
-                  src={sectionData[expandedSection].image || "/placeholder.svg"}
+                  src={sectionData[expandedSection].image}
                   alt="AI Monitoring Solution"
                   className="w-full object-contain max-w-[90%] h-auto lg:h-[662px]"
                 />

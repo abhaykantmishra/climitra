@@ -3,6 +3,7 @@ import ClimitraHeader from "./ClimitraHeader";
 import Footer from "./Footer";
 import { Menu, ChevronLeft, ChevronRight } from "lucide-react";
 import CDRCarousel from "./CDR-Carousel";
+import DigitalMRVStandards from "./CDR-MRV";
 
 const CDRPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -305,7 +306,7 @@ const CDRPage = () => {
       </div>
 
       {/* Features Section */}
-      <div className="w-full bg-[#FDFDFD] py-12 md:py-16 lg:py-20">
+      <div className="w-full hidden md:block bg-[#FDFDFD] py-12 md:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
           <div className="text-center mb-8 md:mb-12">
@@ -354,6 +355,8 @@ const CDRPage = () => {
           </div>
         </div>
       </div>
+
+      <DigitalMRVStandards />
 
       {/* Call to Action Section */}
       <div className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 overflow-hidden">

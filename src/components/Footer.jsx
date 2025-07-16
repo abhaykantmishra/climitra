@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         {/* LinkedIn Icon */}
-        <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] lg:w-[30px] lg:h-[30px] flex-shrink-0">
+        <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="hover:cursor-pointer w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] lg:w-[30px] lg:h-[30px] flex-shrink-0">
           <svg
             width="100%"
             height="100%"
@@ -107,9 +107,8 @@ const Footer = () => {
             />
           </svg>
         </div>
-        <div className="ml-4 sm:ml-5 lg:ml-[1.5625rem] flex flex-col sm:flex-row sm:items-center">
+        <div onClick={() => window.open("https://maps.app.goo.gl/sJSt85AEMWZXvdiC8", "_blank")} className="hover:cursor-pointer ml-4 sm:ml-5 lg:ml-[1.5625rem] flex flex-col sm:flex-row sm:items-center">
           <span className="text-[#6C6C6C] text-xs sm:text-sm lg:text-base font-medium font-montserrat whitespace-nowrap">
-            Connect with us -
           </span>
           <span className="text-[#6C6C6C] text-xs sm:text-sm lg:text-base font-normal font-montserrat sm:ml-1 whitespace-nowrap">
             2/4, Sarvpriya Vihar, Hauz Khas, Delhi 110016
