@@ -3,26 +3,34 @@ import { useState, useEffect, useRef } from "react"
 function DigitalMRVStandards() {
   const features = [
     {
-      icon: "/images/Mask group (29).png",
+      icon: "images/measure.png",
       title: "Measurability",
-      description: "AI-driven measurement delivering accurate, continuous monitoring and data insights.",
+      description:
+        "AI-driven measurement delivering accurate, continuous monitoring and data insights.",
+      isHighlighted: false,
     },
     {
-      icon: "/images/Mask group (30).png",
+      icon: "images/performance.png",
       title: "Permanence",
-      description: "Biochar stable for 100-1000 years with independently verified stability testing",
+      description:
+        "Biochar stable for 100-1000 years with independently verified stability testing",
+      isHighlighted: false,
     },
     {
-      icon: "/images/Mask group (35).png", 
+      icon: "images/leaf.png",
       title: "Additionality",
-      description: "Converting waste that would otherwise decompose, creating new carbon sinks",
+      description:
+        "Converting waste that would otherwise decompose, creating new carbon sinks",
+      isHighlighted: false,
     },
     {
-      icon: "/images/Mask group (32).png", 
+      icon: "images/verify.png",
       title: "Verification",
-      description: "Independent verification by recognized carbon standard bodies",
+      description:
+        "Independent verification by recognized carbon standard bodies",
+      isHighlighted: false,
     },
-  ]
+  ];
 
   const [highlightedIndex, setHighlightedIndex] = useState(null)
   const [isComponentInView, setIsComponentInView] = useState(false)
@@ -79,8 +87,8 @@ function DigitalMRVStandards() {
       },
       {
         root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
+        rootMargin: "300px",
+        threshold: 0.9,
       },
     )
 
