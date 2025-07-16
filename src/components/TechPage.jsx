@@ -72,9 +72,9 @@ const TechPage = () => {
         {/* HERO TEXT */}
         <div className="absolute inset-0 flex items-center justify-center z-20 px-4 pointer-events-none">
           <h1 className="font-montserrat text-white text-center font-semibold text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl mx-auto pointer-events-auto">
-            Pioneering biomass tech for reliable,
+            Pioneering biomass tech for 
             <br />
-            sustainable impact
+            reliable, sustainable impact
           </h1>
         </div>
       </div>
@@ -306,13 +306,13 @@ const TechPage = () => {
                       <div className="w-2 h-2 bg-climitra-green rounded-full mt-2 md:mt-3 flex-shrink-0"></div>
                       <p className="text-climitra-text font-montserrat text-sm md:text-base leading-relaxed">
                         Biomass hotspot classification based on density tiers ({"<25% to >65%"}) to guide sourcing
-                        priorities and cluster design.
+                        priorities and cluster design
                       </p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-4">
                       <div className="w-2 h-2 bg-climitra-green rounded-full mt-2 md:mt-3 flex-shrink-0"></div>
                       <p className="text-climitra-text font-montserrat text-sm md:text-base leading-relaxed">
-                        Weather-integrated collection planning to optimize harvest timing
+                        Weather-integrated collection planning to optimize for harvest timing
                       </p>
                     </div>
                   </div>
@@ -335,13 +335,13 @@ const TechPage = () => {
                     <div className="flex items-start gap-2 md:gap-4">
                       <div className="w-2 h-2 bg-climitra-green rounded-full mt-2 md:mt-3 flex-shrink-0"></div>
                       <p className="text-climitra-text font-montserrat text-sm md:text-base leading-relaxed">
-                        Decentralized processing clusters within 5km of biomass sources
+                        Decentralized processing clusters within 5 km of biomass sources
                       </p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-4">
                       <div className="w-2 h-2 bg-climitra-green rounded-full mt-2 md:mt-3 flex-shrink-0"></div>
                       <p className="text-climitra-text font-montserrat text-sm md:text-base leading-relaxed">
-                        Uncertainty management through buffer mechanisms and alternative sourcing strategies
+                        Uncertainty management through buffer mechanisms and alternate sourcing strategies
                       </p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-4">
@@ -836,11 +836,11 @@ const TechPage = () => {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center max-w-4xl mx-auto px-4 mt-0 md:-mt-10">
             <h2 className="text-white font-montserrat font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight text-center mb-4 md:mb-5">
-              No Guesswork. Just Verified Carbon
+              No Guesswork. Just Verified Carbon.
             </h2>
             <p className="text-white font-sofia text-center text-base md:text-lg leading-normal max-w-3xl mx-auto mb-8 md:mb-10">
               From satellite-based biomass mapping to digital MRV, Climitra ensures every ton removed is real,
-              traceable, and credit-ready
+              traceable, and credit-ready.
             </p>
             <div className="flex justify-center w-full">
               <button onClick={() => handleNavigation("contact")} className="bg-climitra-green text-white font-montserrat font-bold text-base md:text-lg hover:bg-opacity-90 transition-colors flex items-center justify-center px-5 py-3 rounded-lg">

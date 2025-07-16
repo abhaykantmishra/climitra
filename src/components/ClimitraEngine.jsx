@@ -98,7 +98,7 @@ function ClimitraEngine() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1C6248E5] to-[#00000000] z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#011b12e5] to-[#00000000] z-0" />
 
         <ClimitraHeader 
           menuOpen={menuOpen}
@@ -122,7 +122,7 @@ function ClimitraEngine() {
 
           {/* CTA Button */}
           <div className="mt-[5.3125rem] flex justify-center">
-            <button onClick={() => handleNavigation("contact")} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-teal-800 rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
+            <button onClick={() => handleNavigation("contact")} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-[#1c6248] rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
               Get in touch
             </button>
           </div>
@@ -291,7 +291,7 @@ function ClimitraEngine() {
                 }}>
                   We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+ industrial parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
                 </p>
-                <button onClick={() => {handleNavigation("tech")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("tech")}} className="bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -307,7 +307,7 @@ function ClimitraEngine() {
                 <img src="/images/timeline-item.svg" alt="Timeline Item" className="w-8 h-8 object-contain" />
               </div>
               <div className="absolute left-12 top-12 border-t-2 border-dotted border-lime-500" style={{ right: 'calc(clamp(50px, 15vw, 70px) + 6.729px)' }}></div>
-              <div className="absolute bg-teal-800 rounded-full z-10" style={{ 
+              <div className="absolute bg-[#1c6248] rounded-full z-10" style={{ 
                 right: 'clamp(50px, 15vw, 70px)', 
                 top: '48px', 
                 width: '13.458px', 
@@ -344,7 +344,7 @@ function ClimitraEngine() {
                   height: 'clamp(20px, 6.5vw, 26.465px)', 
                   padding: 'clamp(2px, 0.8vw, 3.385px) clamp(4px, 1.5vw, 8px)' 
                 }}>
-                  <h3 className="justify-start text-teal-800 font-semibold font-montserrat text-center" style={{
+                  <h3 className="justify-start text-[#1c6248] font-semibold font-montserrat text-center" style={{
                     fontSize: 'clamp(10px, 3vw, 12px)',
                     lineHeight: 'clamp(12px, 3.6vw, 14px)'
                   }}>
@@ -358,7 +358,7 @@ function ClimitraEngine() {
                 }}>
                   We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
                 </p>
-                <button onClick={() => {handleNavigation("industrial")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("industrial")}} className="bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -374,7 +374,7 @@ function ClimitraEngine() {
                 <img src="/images/timeline-item.svg" alt="Timeline Item" className="w-8 h-8 object-contain" />
               </div>
               <div className="absolute left-12 top-12 border-t-2 border-dotted border-lime-500" style={{ right: 'calc(clamp(50px, 15vw, 70px) + 6.729px)' }}></div>
-              <div className="absolute bg-teal-800 rounded-full z-10" style={{ 
+              <div className="absolute bg-[#1c6248] rounded-full z-10" style={{ 
                 right: 'clamp(50px, 15vw, 70px)', 
                 top: '48px', 
                 width: '13.458px', 
@@ -411,7 +411,7 @@ function ClimitraEngine() {
                   height: 'clamp(20px, 6.5vw, 26.465px)', 
                   padding: 'clamp(2px, 0.8vw, 3.385px) clamp(4px, 1.5vw, 8px)' 
                 }}>
-                  <h3 className="justify-start text-teal-800 font-semibold font-montserrat text-center" style={{
+                  <h3 className="justify-start text-[#1c6248] font-semibold font-montserrat text-center" style={{
                     fontSize: 'clamp(10px, 3vw, 12px)',
                     lineHeight: 'clamp(12px, 3.6vw, 14px)'
                   }}>
@@ -425,7 +425,7 @@ function ClimitraEngine() {
                 }}>
                   We generate high-integrity carbon removal credits through a digital MRV framework, enabling 100+ year carbon sequestration and access to both voluntary and compliance markets.
                 </p>
-                <button onClick={() => {handleNavigation("cdr")}} className="hover:cursor-pointer  bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("cdr")}} className="hover:cursor-pointer  bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'

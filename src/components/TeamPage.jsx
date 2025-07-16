@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const TeamPage = () => {
   const [activeTab, setActiveTab] = useState("team");
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleNavigation = (page) => {
@@ -48,7 +48,7 @@ const TeamPage = () => {
           <div className="w-full max-w-[29.25rem] mt-[1.5rem] sm:mt-[2rem] md:mt-[2.5rem] flex items-center justify-center">
             <p className="text-white text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] leading-[100%] font-semibold font-montserrat text-center">
               Driven by <span className="text-white">Purpose.</span> Defined by
-              People
+              People.
             </p>
           </div>
         </div>

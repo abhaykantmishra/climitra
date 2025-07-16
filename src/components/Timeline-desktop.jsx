@@ -134,7 +134,7 @@ function TimelineComponent() {
   }, [])
 
   return (
-    <div className="w-full hidden lg:block bg-white">
+    <div className="w-full hidden lg:block bg-white md:mb-2">
       <div ref={timelineRef} className="w-full max-w-[80.0rem] xl:max-h-[200vh] lg:min-h-[250vh] relative bg-white overflow-hidden mx-auto">
         <style jsx>{`
           .moving-box {
@@ -156,14 +156,14 @@ function TimelineComponent() {
           <span className="text-neutral-950 text-4xl font-semibold font-['Montserrat'] leading-[3.125rem]">
             Behind the{" "}
           </span>
-          <span className="text-teal-800 text-4xl font-semibold font-['Montserrat'] leading-[3.125rem]">
+          <span className="text-[#1c6248] text-4xl font-semibold font-['Montserrat'] leading-[3.125rem]">
             Climitra Engine
           </span>
         </div>
-        <div className="w-32 h-0 left-[35.8125rem] top-[5.75rem] absolute outline outline-2 outline-offset-[-0.125rem] outline-teal-800"></div>
+        <div className="w-32 h-0 left-[35.8125rem] top-[5.75rem] absolute outline outline-2 outline-offset-[-0.125rem] outline-[#1c6248]"></div>
         <div className="w-[63.5rem] left-[8.25rem] top-[8.125rem] absolute text-center justify-center">
           <span className="text-neutral-500 text-xl font-normal font-['Montserrat'] leading-loose">Building a </span>
-          <span className="text-teal-800 text-xl font-semibold font-['Montserrat'] leading-loose">
+          <span className="text-[#1c6248] text-xl font-semibold font-['Montserrat'] leading-loose">
             vertically integrated ecosystem
           </span>
           <span className="text-neutral-500 text-xl font-normal font-['Montserrat'] leading-loose">
@@ -175,7 +175,7 @@ function TimelineComponent() {
         {/* MAIN ANIMATED MOVING BOX */}
         {isBoxVisible && (
           <div
-            className={`moving-box ${boxType === "biomass" ? "bg-teal-800" : "bg-lime-500"} rounded-xl outline outline-2 outline-offset-[-0.125rem] ${boxType === "biomass" ? "outline-teal-800" : "outline-lime-500"} overflow-hidden shadow-lg`}
+            className={`moving-box ${boxType === "biomass" ? "bg-[#1c6248]" : "bg-lime-500"} rounded-xl outline outline-2 outline-offset-[-0.125rem] ${boxType === "biomass" ? "outline-[#1c6248]" : "outline-lime-500"} overflow-hidden shadow-lg`}
             style={{
               transform: `translate(${boxPosition.x}rem, ${boxPosition.y}rem)`,
               width: "6rem",
@@ -188,29 +188,15 @@ function TimelineComponent() {
           </div>
         )}
 
-        {/* SECOND BOX FOR PARALLEL MOVEMENT */}
-        {/* {secondBoxPosition.visible && (
-          <div
-            className="moving-box bg-lime-500 rounded-xl outline outline-2 outline-offset-[-0.125rem] outline-lime-500 overflow-hidden shadow-lg"
-            style={{
-              transform: `translate(${secondBoxPosition.x}rem, ${secondBoxPosition.y}rem)`,
-              width: "6rem",
-              height: "2rem",
-            }}
-          >
-            <div className="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold font-['Montserrat'] leading-none">
-              Biochar
-            </div>
-          </div>
-        )} */}
+      
 
         {/* TIMELINE INFRASTRUCTURE */}
-        <div className="w-80 h-0 left-[43.4375rem] top-[23.3125rem] absolute border-t-2 border-dotted border-teal-800 z-1"></div>
-        <div className="w-80 h-0 left-[40.0rem] top-[23.5rem] absolute origin-top-left rotate-90 outline outline-2 outline-offset-[-0.0625rem] outline-teal-800 z-1"></div>
+        <div className="w-80 h-0 left-[43.4375rem] top-[23.3125rem] absolute border-t-2 border-dotted border-[#1c6248] z-1"></div>
+        <div className="w-80 h-0 left-[40.0rem] top-[23.5rem] absolute origin-top-left rotate-90 outline outline-2 outline-offset-[-0.0625rem] outline-[#1c6248] z-1"></div>
 
         {/* Progressive timeline lines*/}
         <div
-          className={`w-96 h-0 left-[17.0625rem] top-[47.375rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-teal-800 z-1 timeline-line ${visibleSections.includes(1) ? "opacity-100" : "opacity-0"}`}
+          className={`w-96 h-0 left-[17.0625rem] top-[47.375rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-[#1c6248] z-1 timeline-line ${visibleSections.includes(1) ? "opacity-100" : "opacity-0"}`}
         ></div>
         <div
           className={`w-80 h-0 left-[43.4375rem] top-[68.875rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-lime-500 z-1 timeline-line ${visibleSections.includes(2) ? "opacity-100" : "opacity-0"}`}
@@ -240,7 +226,7 @@ function TimelineComponent() {
           <img src="images/satellite.png" alt="Satellite" className="w-24 h-24 object-contain" />
         </div>
         <div className="px-4 py-[0.3125rem] left-[45.125rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
-          <div className="justify-start text-teal-800 text-2xl font-semibold font-['Montserrat'] leading-7">
+          <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
             Biomass Mapping and Mobilisation
           </div>
         </div>
@@ -250,7 +236,7 @@ function TimelineComponent() {
             to meet industrial specs—solving visibility, quality, and logistics at scale for steel decarbonization.
           </div>
         </div>
-        <button onClick={() => {handleNavigation("tech")}} className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[41.0625rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+        <button onClick={() => {handleNavigation("tech")}} className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[41.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
           <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
             Know More
           </span>
@@ -269,17 +255,16 @@ function TimelineComponent() {
             alt="Fire"
           />
           <div className="px-4 py-[0.3125rem] left-[5.5rem] top-[51.875rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden">
-            <div className="justify-start text-teal-800 text-2xl font-semibold font-['Montserrat'] leading-7">
+            <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
               Bespoke Conversion Technology
             </div>
           </div>
           <div className="w-96 left-[5.5rem] top-[56.1875rem] absolute inline-flex flex-col justify-start items-start gap-5">
             <div className="self-stretch justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-              We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+
-              industrial parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
+              We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+ parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
             </div>
           </div>
-          <button onClick={() => {handleNavigation("tech")}}  className="w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden">
+          <button onClick={() => {handleNavigation("tech")}}  className="w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>
@@ -304,7 +289,7 @@ function TimelineComponent() {
             alt="Industrial"
           />
           <div className="px-4 py-[0.3125rem] left-[51.75rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
-            <div className="justify-start text-teal-800 text-2xl font-semibold font-['Montserrat'] leading-7">
+            <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
               Industrial Decarbonization
             </div>
           </div>
@@ -314,7 +299,7 @@ function TimelineComponent() {
               dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
             </div>
           </div>
-          <button onClick={() => {handleNavigation("industrial")}}  className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+          <button onClick={() => {handleNavigation("industrial")}}  className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>
@@ -339,7 +324,7 @@ function TimelineComponent() {
             alt="Carbon"
           />
           <div className="px-4 py-[0.3125rem] left-[5.875rem] top-[93.8125rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
-            <div className="justify-start text-teal-800 text-2xl font-semibold font-['Montserrat'] leading-7">
+            <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
               Carbon Market Integration
             </div>
           </div>
@@ -349,7 +334,7 @@ function TimelineComponent() {
               carbon sequestration and access to both voluntary and compliance markets.
             </div>
           </div>
-          <button onClick={() => {handleNavigation("cdr")}}  className="w-32 h-10 px-5 py-3 left-[5.875rem] top-[106.875rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+          <button onClick={() => {handleNavigation("cdr")}}  className="w-32 h-10 px-5 py-3 left-[5.875rem] top-[106.875rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>

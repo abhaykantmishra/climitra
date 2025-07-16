@@ -5,28 +5,28 @@ const cardsData = [
     title: 'CO₂ Removed',
     from: 0,
     to: 7,
-    unit: 'M Ton',
+    unit: 'M+ Ton',
     image: 'images/CO2.png',
   },
   {
     title: 'Rural Livelihoods Created',
     from: 0,
     to: 100000,
-    unit: '',
+    unit: '+',
     image: 'images/House.png',
   },
   {
     title: 'Coal Replaced',
     from: 0,
     to: 3.8,
-    unit: 'M Ton',
+    unit: 'M+ Ton',
     image: 'images/screw.png',
   },
   {
     title: 'Waste-Biomass Repurposed',
     from: 0,
     to: 15,
-    unit: 'M Ton',
+    unit: 'M+ Ton',
     image: 'images/Recycle.png',
   },
 ];
@@ -123,7 +123,7 @@ const AnimatedImpact = () => {
             </div>
 
             <div className="text-teal-800 text-lg sm:text-xl md:text-2xl font-semibold font-montserrat">
-              {format(values[i], card.unit)}
+              {format(values[i],card.unit)}
             </div>
 
             <div className="text-zinc-600 text-sm sm:text-base md:text-lg text-center mt-2 font-montserrat">

@@ -104,7 +104,7 @@ function BiocharBenefitsSection() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="w-full h-[27.0rem] bg-gradient-to-b from-[#F0FFF9] to-white rounded-xl shadow-lg overflow-hidden"
+                className="w-full h-[35rem] bg-gradient-to-b from-[#F0FFF9] to-white rounded-xl shadow-lg overflow-hidden"
               >
                 <div className="p-9">
                   <div className="w-20 h-20 bg-[#1C6248] rounded-full flex items-center justify-center mb-8">
@@ -146,7 +146,7 @@ function BiocharBenefitsSection() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="min-w-[23.625rem] h-[27.0rem] bg-gradient-to-b from-[#F0FFF9] to-white rounded-xl shadow-lg overflow-hidden"
+              className="min-w-[23.625rem] h-[35rem] bg-gradient-to-b from-[#F0FFF9] to-white rounded-xl shadow-lg overflow-hidden"
             >
               <div className="p-9">
                 <div className="w-20 h-20 bg-[#1C6248] rounded-full flex items-center justify-center mb-8">
