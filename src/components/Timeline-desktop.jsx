@@ -1,6 +1,13 @@
 import { useState, useEffect, useRef } from "react"
 
 function TimelineComponent() {
+
+  const handleNavigation = (section) => {
+    if (window.navigateTo) {
+      window.navigateTo(section);
+    }
+  }
+
   const [scrollProgress, setScrollProgress] = useState(0)
   const [boxPosition, setBoxPosition] = useState({ x: 68.875, y: 22.3125 })
   const [boxType, setBoxType] = useState("biomass")
@@ -127,7 +134,7 @@ function TimelineComponent() {
   }, [])
 
   return (
-    <div className="w-full hidden lg:block bg-white py-12">
+    <div className="w-full hidden lg:block bg-white">
       <div ref={timelineRef} className="w-full max-w-[80.0rem] xl:max-h-[200vh] lg:min-h-[250vh] relative bg-white overflow-hidden mx-auto">
         <style jsx>{`
           .moving-box {
@@ -243,7 +250,7 @@ function TimelineComponent() {
             to meet industrial specs—solving visibility, quality, and logistics at scale for steel decarbonization.
           </div>
         </div>
-        <button className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[41.0625rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+        <button onClick={() => {handleNavigation("tech")}} className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[41.0625rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
           <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
             Know More
           </span>
@@ -272,7 +279,7 @@ function TimelineComponent() {
               industrial parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
             </div>
           </div>
-          <button className="w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden">
+          <button onClick={() => {handleNavigation("tech")}}  className="w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>
@@ -307,7 +314,7 @@ function TimelineComponent() {
               dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
             </div>
           </div>
-          <button className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+          <button onClick={() => {handleNavigation("industrial")}}  className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>
@@ -342,7 +349,7 @@ function TimelineComponent() {
               carbon sequestration and access to both voluntary and compliance markets.
             </div>
           </div>
-          <button className="w-32 h-10 px-5 py-3 left-[5.875rem] top-[106.875rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+          <button onClick={() => {handleNavigation("cdr")}}  className="w-32 h-10 px-5 py-3 left-[5.875rem] top-[106.875rem] absolute bg-teal-800 rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-teal-800 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
             </span>

@@ -7,6 +7,13 @@ const TeamPage = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
+
+
   return (
     <div className="bg-[#FDFDFD] flex flex-col overflow-hidden">
       {/* HERO SECTION */}
@@ -121,14 +128,17 @@ const TeamPage = () => {
       {
         name: "Shubhankar Mihir Seth",
         img: "/images/Frame 1984078250 (1).png",
+        linkedin: " https://www.linkedin.com/in/shubhankar-mihir-seth/",
       },
       {
         name: "Shaurya Sharma",
         img: "/images/Frame 1984078251.png",
+        linkedin: "https://www.linkedin.com/in/shaurya-sharma-705980157",
       },
       {
         name: "Aryaman Mihir Seth",
         img: "/images/Frame 1984078252.png",
+        linkedin: "https://www.linkedin.com/in/aryaman-mihir-seth/",
       },
     ].map((member, index) => (
       <div key={index} className="flex flex-col items-center">
@@ -149,7 +159,7 @@ const TeamPage = () => {
             }`}
           />
         </div>
-        <div className="flex items-center gap-2 mb-1">
+        <div onClick={() => window.open(member.linkedin, "_blank")} className="flex items-center gap-2 mb-1">
           <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[1.5px] border-[#1C6248] rounded-[0.3125rem] p-[0.2rem] sm:p-[0.225rem] md:p-[0.25rem] flex items-center justify-center">
             <img
               src="/images/linkedin_teams.png"
@@ -181,6 +191,7 @@ const TeamPage = () => {
         imageHeight: "h-[225px] sm:h-[255px] md:h-[285px]",
         imgClass: "object-contain p-1 sm:p-1.5 md:p-2",
         marginTop: "mt-0",
+        linkedin: "https://www.linkedin.com/in/nandini-kaushik-187027145/",
       },
       {
         name: "Sanat Vohra",
@@ -188,6 +199,7 @@ const TeamPage = () => {
         imageHeight: "h-[235px] sm:h-[265px] md:h-[295px]",
         imgClass: "object-contain p-1 sm:p-1.5 md:p-2",
         marginTop: "-mt-1 sm:-mt-1.5 md:-mt-2",
+        linkedin: "https://www.linkedin.com/in/sanatv/?originalSubdomain=in",
       },
       {
         name: "Aman Agarwal",
@@ -195,6 +207,7 @@ const TeamPage = () => {
         imageHeight: "h-[225px] sm:h-[255px] md:h-[285px]",
         imgClass: "object-cover p-0.5 sm:p-0.75 md:p-1 translate-y-[3px] sm:translate-y-[3.5px] md:translate-y-[4px]",
         marginTop: "mt-0",
+        linkedin: "https://www.linkedin.com/in/aman-agarwal2003/",
       },
     ].map((member, index) => (
       <div key={index} className={`flex flex-col items-center ${member.marginTop}`}>
@@ -207,7 +220,7 @@ const TeamPage = () => {
             className={`absolute w-full h-full ${member.imgClass}`}
           />
         </div>
-        <div className="flex items-center gap-2 mb-1">
+        <div onClick={() => window.open(member.linkedin, "_blank")} className="flex items-center gap-2 mb-1">
           <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[1.5px] border-[#1C6248] rounded-[0.3125rem] p-[0.2rem] sm:p-[0.225rem] md:p-[0.25rem] flex items-center justify-center">
             <img
               src="/images/linkedin_teams.png"
@@ -257,7 +270,7 @@ const TeamPage = () => {
                 >
                   {/* LinkedIn + Name */}
                   <div
-                    className={`flex items-center gap-2 mb-2 ${isExpanded ? "justify-center" : "justify-center sm:justify-start"}`}
+                    onClick={() => window.open("https://www.linkedin.com/in/vikram-vishal-13242420/", "_blank")} className={`flex items-center gap-2 mb-2 ${isExpanded ? "justify-center" : "justify-center sm:justify-start"}`}
                   >
                     <div className="w-[1.5rem] sm:w-[1.625rem] md:w-[1.75rem] h-[1.5rem] sm:h-[1.625rem] md:h-[1.75rem] border-[0.09375rem] border-[#1C6248] rounded-[0.3125rem] flex items-center justify-center">
                       <img

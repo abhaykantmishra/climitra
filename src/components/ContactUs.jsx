@@ -133,13 +133,13 @@ const ContactUs = () => {
                 <div>
                   <h3 className="text-climitra-green font-montserrat font-semibold text-[1.5rem] leading-[2.125rem]">Address</h3>
                   <p className="text-climitra-text font-montserrat font-semibold text-[1.25rem] leading-[1.775rem]">
-                    New Delhi, <br /> India
+                    Sarvpriya Vihar, Hauz Khas, Delhi 110016, <br /> India
                   </p>
                 </div>
               </div>
 
               {/* LinkedIn */}
-              <div className="flex items-center gap-[1.125rem]">
+              <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="flex items-center gap-[1.125rem]">
                 <div className="w-[3.875rem] h-[3.875rem] min-w-[3.875rem] bg-climitra-green rounded-full flex items-center justify-center">
                   <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
                     <path

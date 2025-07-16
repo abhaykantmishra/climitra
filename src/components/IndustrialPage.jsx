@@ -6,6 +6,13 @@ import IntegrationCarousel from "./Industrial-Carousel";
 import RegulatoryTimeline from "./Industrial-Timeline";
 
 const IndustrialPage = () => {
+
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0); // 0-3: which card is in center
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -514,7 +521,7 @@ const IndustrialPage = () => {
                 Proven globally. Ready for India.
               </span>
             </p>
-            <button className="bg-[#1C6248] my-5 md:my-10 text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
+            <button onClick={() => handleNavigation("contact")} className="bg-[#1C6248] my-5 md:my-10 text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
               <span
                 style={{
                   color: '#FFFFFF',

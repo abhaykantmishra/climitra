@@ -7,6 +7,12 @@ import CDRCarousel from "./CDR-Carousel";
 const CDRPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(1); // 0: left, 1: center, 2: right
+
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
   
 
   const carouselItems = [
@@ -78,7 +84,7 @@ const CDRPage = () => {
       title: "Permanence",
       description:
         "Biochar stable for 100-1000 years with independently verified stability testing",
-      isHighlighted: true,
+      isHighlighted: false,
     },
     {
       icon: "images/leaf.png",
@@ -105,11 +111,18 @@ const CDRPage = () => {
   };
   const scrollRef = useRef(null);
 
-const scrollRight = () => {
+  const scrollRight = () => {
     if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 428, behavior: "smooth" });
+      scrollRef.current.scrollBy({ right: 400, behavior: "smooth" });
     }
   };
+
+  const scrollleft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  }
+
   let isDragging = false;
   let startX;
   let scrollLeft;
@@ -234,6 +247,8 @@ const scrollRight = () => {
 
         {/* Desktop Scrollable Benefits (hidden on smaller screens) */}
         <div className="hidden lg:block relative px-[3.4375rem] overflow-hidden">
+          
+
           <div
             ref={scrollRef}
             className="flex overflow-x-auto gap-[3.625rem] pl-[5.0rem] scroll-smooth pb-6 cursor-grab active:cursor-grabbing scrollbar-hide"
@@ -242,6 +257,14 @@ const scrollRight = () => {
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
           >
+
+              <button
+                onClick={scrollleft}
+                className="absolute left-4 top-[50%] translate-y-[-50%] bg-[#F3FFFA] border-4 border-white rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+              >
+                <ChevronLeft className="w-6 h-6 text-[#1C6248]" />
+              </button>
+
             {benefits.map((benefit, index) => (
               <div
                 key={index}
@@ -268,15 +291,16 @@ const scrollRight = () => {
                 </div>
               </div>
             ))}
+            <button
+              onClick={scrollRight}
+              className="absolute right-4 top-[50%] translate-y-[-50%] bg-[#F3FFFA] border-4 border-white rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+            >
+              <ChevronRight className="w-6 h-6 text-[#1C6248]" />
+            </button>
           </div>
 
           {/* Scroll Right Arrow */}
-          <button
-            onClick={scrollRight}
-            className="absolute right-4 top-[50%] translate-y-[-50%] bg-[#F3FFFA] border-4 border-white rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
-          >
-            <ChevronRight className="w-6 h-6 text-[#1C6248]" />
-          </button>
+          
         </div>
       </div>
 
@@ -310,10 +334,10 @@ const scrollRight = () => {
                   className={`w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mb-4 md:mb-6 ${
                     feature.isHighlighted
                       ? "bg-[#1C6248]"
-                      : "border border-[#C2C2C2]"
+                      : "bg-slate-200 border border-[#C2C2C2]"
                   }`}
                 >
-                  <img src={feature.icon} alt="" className="w-8 h-8 md:w-9 md:h-9" />
+                  <img src={feature.icon} alt="" className="w-8 h-8 md:w-9 md:h-9 text-black" />
                 </div>
                 <h3
                   className={`text-lg md:text-xl font-semibold font-montserrat mb-4 md:mb-6 ${
@@ -353,7 +377,9 @@ const scrollRight = () => {
           <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia font-semibold mb-4 sm:mb-6 md:mb-8 lg:mb-12">
             Measurable. Permanent. Independently verified.
           </p>
-          <button className="bg-[#1C6248] text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg text-sm sm:text-base md:text-lg font-semibold font-montserrat hover:bg-[#155238] transition-colors">
+          <button
+            onClick={() => handleNavigation("contact")}
+            className="bg-[#1C6248] text-white px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-lg text-sm sm:text-base md:text-lg font-semibold font-montserrat hover:bg-[#155238] transition-colors">
             Secure your Carbon Credits Today
           </button>
         </div>

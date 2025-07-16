@@ -16,21 +16,27 @@ const TechPage = () => {
         "We map and quantify biomass using satellite, radar, hyperspectral and on-ground data with high spatial precision.",
     },
     "land-insights": {
-      image: "/images/Frame 1984078377.png",
+      image: "/images/Frame 1984078377.svg",
       description:
         "We analyze land ownership to enable community-specific engagement and sustainable biomass procurement.",
     },
     "supply-forecasting": {
-      image: "/images/Frame 1984078430.png",
+      image: "/images/Frame 1984078430.svg",
       description:
         "We forecast biomass supply and quality, enabling dynamic planning, route optimization and risk management.",
     },
     ecosystem: {
-      image: "/images/Frame 1984078431.png",
+      image: "/images/Frame 1984078431.svg",
       description:
         "We integrate data, logistics and local incentives to build scalable, reliable biomass supply chains for decarbonization.",
     },
   }
+
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
 
   return (
     <div className="bg-white flex flex-col overflow-hidden">
@@ -837,7 +843,7 @@ const TechPage = () => {
               traceable, and credit-ready
             </p>
             <div className="flex justify-center w-full">
-              <button className="bg-climitra-green text-white font-montserrat font-bold text-base md:text-lg hover:bg-opacity-90 transition-colors flex items-center justify-center px-5 py-3 rounded-lg">
+              <button onClick={() => handleNavigation("contact")} className="bg-climitra-green text-white font-montserrat font-bold text-base md:text-lg hover:bg-opacity-90 transition-colors flex items-center justify-center px-5 py-3 rounded-lg">
                 <span className="font-montserrat font-semibold text-base leading-none text-center">
                   Partner with us
                 </span>

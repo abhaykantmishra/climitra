@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 function BiocharBenefitsSection() {
   const benefits = [
@@ -72,6 +72,12 @@ function BiocharBenefitsSection() {
     }
   }
 
+  const scrollleft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ right: 400, behavior: "smooth" }) 
+    }
+  }
+
   return (
     <div className="w-full bg-[#FAFAFA] py-20">
       {/* Section Title */}
@@ -123,6 +129,12 @@ function BiocharBenefitsSection() {
 
       {/* Desktop Scrollable Benefits (hidden on smaller screens) */}
       <div className="hidden lg:block relative px-[3.4375rem] overflow-hidden">
+        <button
+          onClick={scrollleft}
+          className="absolute left-10 top-[50%] translate-y-[-50%] bg-[#F3FFFA] border-4 border-white rounded-full w-14 h-14 flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+        >
+          <ChevronLeft className="w-6 h-6 text-black  " />
+        </button>
         <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-[3.625rem] pl-[5.0rem] scroll-smooth pb-6 cursor-grab active:cursor-grabbing scrollbar-hide"

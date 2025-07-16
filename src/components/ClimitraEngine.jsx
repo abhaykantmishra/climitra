@@ -77,6 +77,12 @@ function ClimitraEngine() {
     setTimeout(() => setBiocharPhase(6), 24500); // Fourth element and card appear
   };
 
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+    }
+  };
+
   return (
     <div className="bg-[rgba(253,253,253,1)] flex flex-col overflow-hidden">
       {/* HERO SECTION */}
@@ -116,8 +122,8 @@ function ClimitraEngine() {
 
           {/* CTA Button */}
           <div className="mt-[5.3125rem] flex justify-center">
-            <button className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-teal-800 rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
-              Find out more
+            <button onClick={() => handleNavigation("contact")} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-teal-800 rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
+              Get in touch
             </button>
           </div>
         </div>
@@ -218,7 +224,7 @@ function ClimitraEngine() {
                 }}>
                   We digitize biomass supply chains using AI-led satellite mapping and local intel, mobilizing 1,000+ tons/day to meet industrial specs—solving visibility, quality, and logistics at scale for steel decarbonization.
                 </p>
-                <button className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("tech")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -285,7 +291,7 @@ function ClimitraEngine() {
                 }}>
                   We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+ industrial parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
                 </p>
-                <button className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("tech")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -352,7 +358,7 @@ function ClimitraEngine() {
                 }}>
                   We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
                 </p>
-                <button className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("industrial")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -419,7 +425,7 @@ function ClimitraEngine() {
                 }}>
                   We generate high-integrity carbon removal credits through a digital MRV framework, enabling 100+ year carbon sequestration and access to both voluntary and compliance markets.
                 </p>
-                <button className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
+                <button onClick={() => {handleNavigation("cdr")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
                   fontSize: 'clamp(9px, 2.5vw, 12px)',
                   borderRadius: 'clamp(4px, 1.5vw, 8px)'
@@ -535,6 +541,7 @@ function ClimitraEngine() {
                 title: "Credit Buyers",
                 desc: "Explore verified carbon credits",
                 cta: "Explore",
+                link: "cdr",
                 arrow:
                   "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/422e4d2b95e4dc3d8c6b01042244c338355f67ac?placeholderIfAbsent=true",
               },
@@ -543,6 +550,7 @@ function ClimitraEngine() {
                 title: "Industrial Partners",
                 desc: "Discover fossil fuel replacement solutions",
                 cta: "Discover",
+                link: "industrial",
                 arrow:
                   "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/60be63b5e06df429cad54f4c29ed758644c99cc5?placeholderIfAbsent=true",
               },
@@ -551,6 +559,7 @@ function ClimitraEngine() {
                 title: "Researchers & NGOs",
                 desc: "Access our technology platform",
                 cta: "Our Technology",
+                link: "tech",
                 arrow:
                   "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/dc4ff0ac9a84b69ec6e0859e2dffadb2e4e94b87?placeholderIfAbsent=true",
               },
@@ -575,7 +584,7 @@ function ClimitraEngine() {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
+                <div onClick={() => handleNavigation(card?.link)} className="flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
                   <span>{card.cta}</span>
                   <img
                     src={card.arrow}

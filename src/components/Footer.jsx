@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         {/* LinkedIn Icon */}
-        <div className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] lg:w-[30px] lg:h-[30px] flex-shrink-0">
+        <div onClick={() => window.open("https://www.linkedin.com/company/climitra/", "_blank")} className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] lg:w-[30px] lg:h-[30px] flex-shrink-0">
           <svg
             width="100%"
             height="100%"
