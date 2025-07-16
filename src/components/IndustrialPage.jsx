@@ -22,7 +22,7 @@ const IndustrialPage = () => {
     {
       icon: "/images/Mask group (43).png",
       title: "Verified Decarbonization Impact",
-      description: "1 ton of biochar saves up to 2.5 tons of CO₂ — with enhanced carbothermal efficiency over coal.",
+      description: "'Every ton of coal replaced with biochar saves up to 2.5 tons of CO₂ — with enhanced carbothermal efficiency over coal.",
     },
     {
       icon: "/images/Mask group (41).png",
@@ -32,12 +32,12 @@ const IndustrialPage = () => {
     {
       icon: "/images/Mask group (42).png",
       title: "Precision-Engineered Biochar",
-      description: "Each batch is customized across 25+ parameters to meet plant-specific specs like ash content, volatile matter, and particle size.",
+      description: "Each batch is customized across 25+ parameters to meet plant-specific specs like calorific value, ash content, volatile matter, and particle size.",
     },
      {
       icon: "/images/Mask group (44).png",
       title: "Commercially Competitive",
-      description: "Designed to compete with fossil fuels on both performance and reliability — without compromising industrial margins.",
+      description: "Designed to compete with fossil fuels on both performance and reliability — without compromising financial margins.",
     },
   ];
 
@@ -196,7 +196,7 @@ const IndustrialPage = () => {
                     Policy Pressure Builds
                   </h4>
                   <p className="font-source-sans-pro text-[#6C6C6C] text-sm md:text-base leading-relaxed">
-                    From 2026, the EU's CBAM will affect $8.6B of Indian exports, while India's CCTS mandates emissions cuts in 9 heavy industries.
+                    From 2026, the EU's CBAM will affect $8.6B+ of Indian exports, while India's CCTS mandates emissions cuts in 9 heavy industries.
                   </p>
                 </div>
               </div>
@@ -212,7 +212,7 @@ const IndustrialPage = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-source-sans-pro text-[#1C6248] font-semibold text-lg md:text-xl mb-2 leading-tight">
-                    Fuel Volatility
+                    Import Volatility
                   </h4>
                   <p className="font-source-sans-pro text-[#6C6C6C] text-sm md:text-base leading-relaxed">
                     With 85% import dependency for coking coal, Indian steelmakers face extreme price volatility, creating unpredictable operating expenses and profit erosion.
@@ -245,7 +245,7 @@ const IndustrialPage = () => {
         {/* Heading */}
         <h2 className="text-white font-montserrat text-2xl sm:text-3xl md:text-[2.5rem] leading-tight md:leading-[3.3125rem] text-left max-w-full md:max-w-[52.3125rem]">
           <span className="font-semibold">Biochar as a Decarbonization Lever:</span>
-          <br className="md:hidden" /> {/* Line break for mobile */}
+          <br/> {/* Line break for mobile */}
           <span className="font-normal">The Perfect Coal Alternative</span>
         </h2>
 
@@ -537,7 +537,7 @@ const IndustrialPage = () => {
                   textAlign: 'center',
                 }}
               >
-                Partner with Us Today
+                Partner with us today
               </span>
             </button>
           </div>

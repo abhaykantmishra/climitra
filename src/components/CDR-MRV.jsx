@@ -13,7 +13,7 @@ function DigitalMRVStandards() {
       icon: "images/performance.png",
       title: "Permanence",
       description:
-        "Biochar stable for 100-1000 years with independently verified stability testing",
+        "Biochar remains stable for 100-1000 years with independently verified stability testing",
       isHighlighted: false,
     },
     {

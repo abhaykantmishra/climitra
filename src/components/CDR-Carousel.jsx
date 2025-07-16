@@ -7,19 +7,19 @@ const carouselItems = [
       icon: "images/smoke_cdr.png",
       title: "Balancing Residual Emissions",
       description:
-        "Even with aggressive decarbonization, some industries will have hard-to-abate emissions. CDR provides the critical counterbalance needed for true carbon neutrally.",
+        "Even with aggressive decarbonization, some industries will have hard-to-abate emissions. CDR provides the critical counterbalance needed for true carbon neutrality.",
     },
     {
       icon: "images/tree_cdr.png",
       title: 'The "Net" in Net Zero',
       description:
-        "Emissions reduction alone is insufficient for stabilizing global temperatures. CDR ensures net zero is attainable by removing CO2 that's already there in the atmosphere",
+        "Emissions reduction alone is insufficient for stabilizing global temperatures. CDR ensures net zero is attainable by removing CO2 that's already there in the atmosphere.",
     },
     {
       icon: "images/temp.png",
       title: "Climate Stability",
       description:
-        "To limit warning to 1.5 C, we need both rapid emission cuts and large-scale carbon removal. CDR is not optional it's essential for climate stability",
+        "To limit warning to 1.5 C, we need both rapid emission cuts and large-scale carbon removal. CDR is not optional it's essential for climate stability.",
     },
   ];
 
@@ -115,7 +115,7 @@ function CDRCarousel() {
                 key={`dot-desktop-${index}`}
                 onClick={() => setCurrentSlide(index)}
                 className={`rounded-full transition-all ${
-                  currentSlide === index ? "bg-[#1C6248] w-4 h-4" : "bg-[#D9D9D9] w-3 h-3"
+                  currentSlide === index ? "bg-[#1c6248] w-4 h-4" : "bg-[#D9D9D9] w-3 h-3"
                 }`}
               />
             ))}
@@ -140,7 +140,7 @@ function CDRCarousel() {
               }`}
             >
               <ChevronRight
-                className={`w-5 h-5 ${currentSlide === carouselItems.length - 1 ? "text-gray-400" : "text-[#1C6248]"}`}
+                className={`w-5 h-5 ${currentSlide === carouselItems.length - 1 ? "text-gray-400" : "text-[#1c6248]"}`}
               />
             </button>
           </div>
@@ -154,11 +154,11 @@ function CDRCarousel() {
             key={`card-mobile-${index}`}
             className="w-full bg-gradient-to-b from-[#F0FFF9] to-white rounded-xl shadow-md p-6 flex flex-col items-center text-center border border-[#E5E5E5]"
           >
-            <div className="w-16 h-16 bg-[#1C6248] rounded-full flex items-center justify-center mb-4">
+            <div className="w-16 h-16 bg-[#1c6248] rounded-full flex items-center justify-center mb-4">
               <img src={item.icon || "/placeholder.svg"} alt="" className="w-8 h-8 object-contain" />
             </div>
-            <h3 className="text-lg font-bold text-[#1C6248] font-montserrat mb-2">{item.title}</h3>
-            <div className="w-12 h-0.5 bg-[#1C6248] mb-4" />
+            <h3 className="text-lg font-bold text-[#1c6248] font-montserrat mb-2">{item.title}</h3>
+            <div className="w-12 h-0.5 bg-[#1c6248] mb-4" />
             <p className="text-sm text-[#0C0C0C] font-montserrat leading-5">{item.description}</p>
           </div>
         ))}
