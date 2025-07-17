@@ -4,6 +4,7 @@ import ClimitraHeader from "./ClimitraHeader";
 import Footer from "./Footer";
 import { Menu } from "lucide-react";
 import TimelineComponent from "./Timeline-desktop";
+import { Plus } from "lucide-react"
 
 function ClimitraEngine() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -77,6 +78,27 @@ function ClimitraEngine() {
     setTimeout(() => setBiocharPhase(6), 24500); // Fourth element and card appear
   };
 
+  const projects = [
+  {
+    img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/389c7961cf69c74d45a01118e0bd13ccdbf78a96?placeholderIfAbsent=true",
+    title: "Uttarakhand",
+    subtitle: "Lantana camara",
+    badge: "Coming Soon",
+  },
+  {
+    img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/6b12783ee2f81663334c50ab55a560fdb37dff93?placeholderIfAbsent=true",
+    title: "Punjab",
+    subtitle: "Rice stubble",
+    badge: "Coming Soon",
+  },
+  {
+    img: "images/image-101.png",
+    title: "Gujarat",
+    subtitle: "Prosopis juliflora",
+    badge: "Coming Soon",
+  },
+];
+
   const handleNavigation = (page) => {
     if (window.navigateTo) {
       window.navigateTo(page);
@@ -117,20 +139,20 @@ function ClimitraEngine() {
         {/* Hero Text */}
         <div className="absolute w-full top-[14.75rem] px-4 sm:px-6 md:px-8 flex flex-col items-center z-10">
           <h1 className="text-white font-semibold font-montserrat leading-tight text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl max-w-[57.6875rem] text-center mx-auto">
-            Unlocking India's billion-ton biomass opportunity for Climate Action
+            Unlocking India's giga-scale biomass opportunity
           </h1>
 
           {/* CTA Button */}
           <div className="mt-[5.3125rem] flex justify-center">
             <button onClick={() => handleNavigation("contact")} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-[#1c6248] rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
-              Get in touch
+              Find out more
             </button>
           </div>
         </div>
       </div>
 
       {/* TIMELINE SECTION - Desktop and Mobile */}
-      <div className="w-full bg-white">
+      <div className="w-full bg-white mb-4">
         {/* Desktop Layout */}
         <TimelineComponent />
 
@@ -147,10 +169,11 @@ function ClimitraEngine() {
               fontSize: 'clamp(1.25rem, 5.5vw, 1.5rem)', 
               lineHeight: 'clamp(1.75rem, 7vw, 2rem)' 
             }}>
-              Behind the <span className="text-teal-800">Climitra Engine</span>
+              
+              Inside the <span className="text-teal-800">Climitra Engine</span>
             </h2>
             <div className="bg-teal-800 mx-auto" style={{ 
-              width: 'clamp(4rem, 18vw, 5rem)', 
+              width: 'clamp(4rem, 20vw, 5rem)', 
               height: 'clamp(2px, 1vw, 4px)', 
               marginBottom: 'clamp(1rem, 5vw, 1.5rem)' 
             }}></div>
@@ -214,7 +237,7 @@ function ClimitraEngine() {
                     fontSize: 'clamp(10px, 3vw, 12px)',
                     lineHeight: 'clamp(12px, 3.6vw, 14px)'
                   }}>
-                    Biomass Mapping and Mobilisation
+                    Biomass Mobilisation
                   </h3>
                 </div>
                 <p className="text-neutral-500 font-normal font-source-sans leading-tight text-right mb-3" style={{ 
@@ -222,7 +245,7 @@ function ClimitraEngine() {
                   fontSize: 'clamp(10px, 3vw, 12px)',
                   lineHeight: 'clamp(14px, 4.2vw, 16px)'
                 }}>
-                  We digitize biomass supply chains using AI-led satellite mapping and local intel, mobilizing 1,000+ tons/day to meet industrial specs—solving visibility, quality, and logistics at scale for steel decarbonization.
+                   We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and logistics for industrial decarbonization.
                 </p>
                 <button onClick={() => {handleNavigation("tech")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
@@ -438,92 +461,40 @@ function ClimitraEngine() {
         </div>
       </div>
       {/* IMPACT SECTION */}
-
-      <AnimatedImpact />
+      {/* <div className="mb-[10px]"> */}
+         <AnimatedImpact />
+      {/* </div> */}
+      
 
       {/* CURRENT PROJECTS SECTION - Fixed width, 5.0rem gap, center-aligned */}
-      <div className="px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
-        <div className="text-center mb-6 sm:mb-8 md:mb-12">
-          <h2 className="text-[#0c0c0c] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-none font-montserrat">
-            Our <span className="text-climitra-green">Current</span> Projects
+       <section className="w-full py-16 md:py-24 lg:py-32">
+        <div className="container mx-auto w-full max-w-[80.0rem] xl:max-h-[200vh] px-4 md:px-6 text-center">
+          <h2 className="text-3xl font-semibold
+          font-montserrat tracking-tighter sm:text-4xl md:text-5xl text-gray-800">
+            Our <span className="text-[#1c6248]">Current</span> Projects
           </h2>
-          <div className="w-20 sm:w-24 md:w-32 h-1 bg-climitra-green mx-auto mt-3 sm:mt-4 md:mt-6"></div>
-        </div>
-
-        <div className="max-w-[64.0rem] mx-auto mt-[5.0rem] flex flex-col items-center lg:flex-row lg:justify-center lg:gap-[5.0rem]">
-          {/* Project 1 */}
-          <div className="w-[17.75rem] h-[19.1875rem] flex flex-col justify-between rounded-xl bg-climitra-bg-green overflow-hidden shadow-lg hover:shadow-xl transition-shadow mb-12 lg:mb-0">
-            <div className="aspect-[1.775] relative overflow-hidden">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/389c7961cf69c74d45a01118e0bd13ccdbf78a96?placeholderIfAbsent=true"
-                alt="Uttarakhand Project"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pt-[1.5rem] px-4 pb-5">
-              <h3 className="text-climitra-green text-base sm:text-lg md:text-xl font-medium leading-tight font-montserrat">
-                Uttarakhand
-              </h3>
-              <p className="text-climitra-text italic text-sm sm:text-base leading-relaxed mt-1">
-                Lantana camara
-              </p>
-              <div className="mt-4">
-                <span className="inline-flex items-center justify-center rounded-md border border-climitra-green px-4 py-2 text-sm font-medium text-climitra-green">
-                  Coming Soon
-                </span>
+          <div className="h-1 w-24 bg-[#1c6248] mx-auto mt-4 mb-12" /> {/* Underline */}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <div key={index} className="relative overflow-hidden rounded-lg shadow-lg group">
+                <img
+                  src={project.img || "/placeholder.svg"}
+                  alt={project.title}
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-60 transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                  <h3 className="text-xl font-semibold">{project.title}</h3>
+                  <div className="absolute bottom-4 right-4 flex items-center justify-center w-8 h-8 rounded-full bg-white text-[#1c6248]">
+                    <Plus className="w-4 h-4" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          {/* Project 2 (center) */}
-          <div className="w-[17.75rem] h-[19.1875rem] flex flex-col justify-between rounded-xl bg-climitra-bg-green overflow-hidden shadow-lg hover:shadow-xl transition-shadow mb-12 lg:mb-0">
-            <div className="aspect-[1.775] relative overflow-hidden">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/6b12783ee2f81663334c50ab55a560fdb37dff93?placeholderIfAbsent=true"
-                alt="Punjab Project"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pt-[1.5rem] px-4 pb-5">
-              <h3 className="text-climitra-green text-base sm:text-lg md:text-xl font-medium leading-tight font-montserrat">
-                Punjab
-              </h3>
-              <p className="text-climitra-text italic text-sm sm:text-base leading-relaxed mt-1">
-                Rice stubble
-              </p>
-              <div className="mt-4">
-                <span className="inline-flex items-center justify-center rounded-md border border-climitra-green px-4 py-2 text-sm font-medium text-climitra-green">
-                  Coming Soon
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="w-[17.75rem] h-[19.1875rem] flex flex-col justify-between rounded-xl bg-climitra-bg-green overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-            <div className="aspect-[1.775] relative overflow-hidden">
-              <img
-                src="images/image-101.png"
-                alt="Gujarat Project"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="pt-[1.5rem] px-4 pb-5">
-              <h3 className="text-climitra-green text-base sm:text-lg md:text-xl font-medium leading-tight font-montserrat">
-                Gujarat
-              </h3>
-              <p className="text-climitra-text italic text-sm sm:text-base leading-relaxed mt-1">
-                Prosopis juliflora
-              </p>
-              <div className="mt-4">
-                <span className="inline-flex items-center justify-center rounded-md border border-climitra-green px-4 py-2 text-sm font-medium text-climitra-green">
-                  Coming Soon
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
       {/* START YOUR JOURNEY SECTION */}
       <div className="bg-[rgba(250,250,250,1)] px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16 lg:py-20">
@@ -557,7 +528,7 @@ function ClimitraEngine() {
               {
                 img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/b0a09aeaf89bbfa497b83c19260926f8a4ff2d90?placeholderIfAbsent=true",
                 title: "Researchers & NGOs",
-                desc: "Access our technology platform",
+                desc: "Read more about our technology platform",
                 cta: "Our Technology",
                 link: "tech",
                 arrow:
