@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const integrationItems = [
   {
     id: 0,
-    icon: "/images/Mask group (43).png",
+    icon: "/images/Mask group (103).png",
     title: "Verified Decarbonization Impact",
     description: "Every ton of coal replaced with biochar saves up to 2.5 tons of CO₂ — with enhanced carbothermal efficiency over coal.",
   },

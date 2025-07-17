@@ -6,7 +6,7 @@ function DigitalMRVStandards() {
       icon: "images/measure.png",
       title: "Measurability",
       description:
-        "AI-driven measurement delivering accurate, continuous monitoring and data insights.",
+        "AI-driven measurement delivering accurate, continuous monitoring and data insights",
     },
     {
       icon: "images/performance.png",
@@ -28,12 +28,17 @@ function DigitalMRVStandards() {
     },
   ];
 
+  // State for highlighted index
   const [highlightedIndex, setHighlightedIndex] = useState(null);
+  // Track when component is in view
   const [isComponentInView, setIsComponentInView] = useState(false);
+  // Track if screen is small (<640px)
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 640);
+
   const featureRefs = useRef([]);
   const componentRef = useRef(null);
 
-  // Observe when this section enters/leaves the viewport
+  // Observe section in/out of viewport
   useEffect(() => {
     const compObserver = new IntersectionObserver(
       ([entry]) => {
@@ -57,12 +62,20 @@ function DigitalMRVStandards() {
     };
   }, []);
 
-  // When in view, on each scroll pick the card whose top is
-  // closest to the “highlightLine” (40% down the viewport)
+  // Update screen size state on resize
   useEffect(() => {
-    if (!isComponentInView) {
-      return;
-    }
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640);
+      // Reset highlight when switching modes
+      setHighlightedIndex(null);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Scroll-based highlight, only on small screens
+  useEffect(() => {
+    if (!isComponentInView || !isSmallScreen) return;
 
     const highlightLine = window.innerHeight * 0.4;
 
@@ -83,11 +96,10 @@ function DigitalMRVStandards() {
       setHighlightedIndex(bestIdx);
     }
 
-    // run once to initialize
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isComponentInView]);
+  }, [isComponentInView, isSmallScreen]);
 
   return (
     <div
@@ -118,6 +130,9 @@ function DigitalMRVStandards() {
                 key={idx}
                 ref={(el) => (featureRefs.current[idx] = el)}
                 className="flex flex-col items-center text-center transition-all duration-300 ease-in-out"
+                // Hover-based highlighting on md+ screens
+                onMouseEnter={() => !isSmallScreen && setHighlightedIndex(idx)}
+                onMouseLeave={() => !isSmallScreen && setHighlightedIndex(null)}
               >
                 <div
                   className={`w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mb-4 md:mb-6 transition-colors duration-300 ${

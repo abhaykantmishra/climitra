@@ -101,7 +101,7 @@ const TechPage = () => {
             {/* Left Image */}
             <div className="order-2 lg:order-1">
               <img
-                src="/images/Group 423.png"
+                src="/images/Group 1129.png"
                 alt="Biomass Ecosystem"
                 className="w-full h-auto object-contain filter brightness-[1.1] contrast-[1.15] saturate-[1.2] image-rendering-crisp-edges"
               />
@@ -562,16 +562,19 @@ const TechPage = () => {
         </div>
       </div>
       {/* DATA INFRASTRUCTURE SECTION */}
-      <div className="bg-[#F0FFF9] py-10 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 flex flex-col items-center gap-10 md:gap-20">
+      <div className="bg-[#F0FFF9] inline-flex flex-col items-center w-full min-h-screen
+    gap-8 p-6
+    sm:gap-12 sm:p-[60px_106px_87px_106px]
+    md:gap-20 md:p-[80px_123px_117px_123px]">
+        <div>
           {/* Section Header */}
-          <div className="w-full max-w-3xl text-center">
+          <div className="w-full text-center">
             <h2 className="font-montserrat font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight mb-4">
               <span className="text-climitra-dark">Data Infrastructure for </span>
-              <span className="text-climitra-green">Reliable Industrial Decarbonization</span>
+              <span className="text-climitra-green">Reliable Industrial<br/> Decarbonization</span>
             </h2>
             <div className="w-[134px] h-1 bg-climitra-green mx-auto mt-4"></div>
-            <p className="w-full text-[#5D5D5D] text-center font-montserrat text-base md:text-lg lg:text-xl font-normal leading-relaxed mt-6">
+            <p className="w-full text-[#5D5D5D] text-center font-montserrat text-base md:text-lg lg:text-xl font-normal leading-relaxed mt-6 max-w-[972px] mx-auto">
               We connect plant-level emissions data with compliance-ready ESG dashboards, enabling transparency from the
               ground to the boardroom.
             </p>
@@ -579,43 +582,45 @@ const TechPage = () => {
           {/* Dashboard Sections */}
           <div className="w-full flex flex-col gap-10 md:gap-20">
             {/* Live Operational Dashboards */}
-            <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
-              <div className="w-full md:w-1/2 order-2 md:order-1">
-                <div className="mb-6">
-                  <p className="text-climitra-text font-montserrat text-base md:text-lg leading-relaxed mb-4">
+            <div className="flex flex-col md:flex-row items-center md:justify-between gap-20">
+              <div className="w-[100%]  md:w-1/2 order-2 md:order-1 p-4 md:max-w-[509px]">
+                <div className="">
+                   <h3 className="text-[#1c6248] font-montserrat font-semibold text-xl md:text-2xl leading-tight mb-4">
+                    Live Operational Dashboards
+                  </h3>
+                  <p className="text-climitra-text font-montserrat text-base md:text-lg leading-relaxed mb-4 text-[22px] font-normal">
                     Track biochar usage, blending ratios, and emissions in real time — enabling performance optimization
                     directly inside plant workflows.
                   </p>
-                  <h3 className="text-climitra-green font-montserrat font-semibold text-xl md:text-2xl leading-tight">
-                    Live Operational Dashboards
-                  </h3>
+                 
                 </div>
                 <button className="inline-flex py-3 px-5 justify-center items-center gap-2 rounded-lg bg-climitra-green">
                   <span className="text-white font-montserrat text-base font-medium leading-normal">Coming Soon</span>
                 </button>
-              </div>
+              </div >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/51b418d36dbbe482240b87ce10d521e1825bd5c2?width=890"
                 alt="Live Operational Dashboard"
-                className="w-full md:w-1/2 h-auto aspect-square object-contain order-1 md:order-2"
+                className="w-full md:w-1/2  h-auto aspect-square object-contain order-1 md:order-2 md:max-h-[445px] md:max-w-[445px]"
               />
             </div>
             {/* Automated ESG & Compliance Reporting */}
-            <div className="flex flex-col md:flex-row items-center md:justify-between gap-8">
+            <div className="flex flex-col md:flex-row items-center md:justify-between gap-20">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/7944b508d99778c6437b924b3b21ff7392da2d0a?width=890"
                 alt="ESG Compliance Reporting"
-                className="w-full md:w-1/2 h-auto aspect-square object-contain order-1 md:order-1"
+                className="w-full md:w-1/2 h-auto aspect-square object-contain order-1 md:order-1 md:max-h-[445px] md:max-w-[445px]"
               />
               <div className="w-full md:w-1/2 order-2 md:order-2">
-                <div className="mb-6">
+                <div className="">
+                   <h3 className="text-climitra-green font-montserrat font-semibold text-xl md:text-2xl leading-tight mb-4">
+                    Automated ESG & Compliance Reporting
+                  </h3>
                   <p className="text-climitra-text font-montserrat text-base md:text-lg leading-relaxed mb-4">
                     Structured emissions data integrates with ESG disclosures and supports compliance with CBAM, CCTS,
                     and industrial decarbonization mandates.
                   </p>
-                  <h3 className="text-climitra-green font-montserrat font-semibold text-xl md:text-2xl leading-tight">
-                    Automated ESG & Compliance Reporting
-                  </h3>
+                 
                 </div>
                 <button className="inline-flex py-3 px-5 justify-center items-center gap-2 rounded-lg bg-climitra-green">
                   <span className="text-white text-center font-montserrat text-base font-medium leading-normal">

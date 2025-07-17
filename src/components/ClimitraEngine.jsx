@@ -16,6 +16,7 @@ function ClimitraEngine() {
   const [biocharPhase, setBiocharPhase] = useState(0);
   const [verticalLineProgress, setVerticalLineProgress] = useState(0);
   const timelineRef = useRef(null);
+  const engineRef = useRef(null);
 
   // Intersection Observer for timeline animation trigger
   useEffect(() => {
@@ -99,10 +100,8 @@ function ClimitraEngine() {
   },
 ];
 
-  const handleNavigation = (page) => {
-    if (window.navigateTo) {
-      window.navigateTo(page);
-    }
+const scrollToEngine = () => {
+    engineRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -144,7 +143,7 @@ function ClimitraEngine() {
 
           {/* CTA Button */}
           <div className="mt-[5.3125rem] flex justify-center">
-            <button onClick={() => handleNavigation("contact")} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-[#1c6248] rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
+            <button onClick={() => scrollToEngine()} className="w-32 sm:w-36 md:w-40 lg:w-44 h-9 sm:h-10 md:h-11 lg:h-12 px-4 py-2 bg-[#1c6248] rounded-full flex items-center justify-center gap-2 text-white text-sm font-semibold font-montserrat hover:bg-teal-700 transition-colors duration-200">
               Find out more
             </button>
           </div>
@@ -152,7 +151,7 @@ function ClimitraEngine() {
       </div>
 
       {/* TIMELINE SECTION - Desktop and Mobile */}
-      <div className="w-full bg-white mb-4">
+      <div ref={engineRef} className="w-full bg-white mb-4">
         {/* Desktop Layout */}
         <TimelineComponent />
 
@@ -356,7 +355,7 @@ function ClimitraEngine() {
                 outlineColor: '#65a30d',
                 outlineOffset: 'clamp(-1px, -0.3vw, -2px)'
               }}>
-                <div className="text-center justify-start leading-none">Biochar</div>
+                <div className="text-center justify-start leading-none">Engineered Biofuel</div>
               </div>
               <div className="absolute right-0 top-20 flex flex-col items-end gap-2" style={{ 
                 width: 'clamp(240px, 70vw, 281.395px)', 
@@ -423,7 +422,7 @@ function ClimitraEngine() {
                 outlineColor: '#65a30d',
                 outlineOffset: 'clamp(-1px, -0.3vw, -2px)'
               }}>
-                <div className="text-center justify-start leading-none">Biochar</div>
+                <div className="text-center justify-start leading-none">Engineered Biofuel</div>
               </div>
               <div className="absolute right-0 top-20 flex flex-col items-end gap-2" style={{ 
                 width: 'clamp(240px, 70vw, 281.395px)', 

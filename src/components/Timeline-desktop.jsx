@@ -30,17 +30,17 @@ function TimelineComponent() {
     // Step 4: Move left to second section
     { progress: 0.35, x: 15.0625, y: 46.375, sections: [0, 1], boxType: "biomass" },
     // Step 5: Move back to center - reveal section 3 earlier
-    { progress: 0.45, x: 36.625, y: 46.375, sections: [0, 1, 2], boxType: "biochar" },
+    { progress: 0.45, x: 36.625, y: 46.375, sections: [0, 1, 2], boxType: "engineered biofuel" },
     // Step 6: Move down to third level
-    { progress: 0.55, x: 36.625, y: 68.875, sections: [0, 1, 2], boxType: "biochar" },
+    { progress: 0.55, x: 36.625, y: 68.875, sections: [0, 1, 2], boxType: "engineered biofuel" },
     // Step 7: Split - main box moves right, reveal section 4 earlier
-    { progress: 0.65, x: 62.955, y: 67.875, sections: [0, 1, 2, 3], boxType: "biochar" },
+    { progress: 0.65, x: 62.955, y: 67.875, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
     // Step 8: Continue parallel movement
-    { progress: 0.75, x: 36.625, y: 67.875, sections: [0, 1, 2, 3], boxType: "biochar" },
+    { progress: 0.75, x: 36.625, y: 67.875, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
     // Step 9: Move down to fourth level
-    { progress: 0.85, x: 36.625, y: 88.125, sections: [0, 1, 2, 3], boxType: "biochar" },
+    { progress: 0.85, x: 36.625, y: 88.125, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
     // Step 10: Final position - left
-    { progress: 1, x: 15.375, y: 88.125, sections: [0, 1, 2, 3], boxType: "biochar" },
+    { progress: 1, x: 15.375, y: 88.125, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
   ]
 
   useEffect(() => {
@@ -135,7 +135,7 @@ function TimelineComponent() {
 
   return (
     <div className="w-full hidden lg:block bg-white md:mb-2">
-      <div ref={timelineRef} className="w-full max-w-[80.0rem] xl:max-h-[200vh] lg:min-h-[250vh] relative bg-white overflow-hidden mx-auto">
+      <div ref={timelineRef} className="w-full max-w-[80.0rem] xl:max-h-[255vh] lg:min-h-[255vh] relative bg-white overflow-hidden mx-auto">
         <style jsx>{`
           .moving-box {
             position: absolute;
@@ -182,8 +182,8 @@ function TimelineComponent() {
               height: "2rem",
             }}
           >
-            <div className="absolute inset-0 flex items-center justify-center text-white text-xs font-semibold font-['Montserrat'] leading-none">
-              {boxType === "biomass" ? "Biomass" : "Biochar"}
+            <div className={`absolute inset-0 flex items-center justify-center text-white text-xs  font-['Montserrat'] leading-none ${ boxType === "engineered biofuel" ?"ml-4":""}`}>
+              {boxType === "biomass" ? "Biomass" : boxType==="engineered biofuel"?"Engineered Biofuel":"Biochar"}
             </div>
           </div>
         )}
@@ -191,7 +191,7 @@ function TimelineComponent() {
       
 
         {/* TIMELINE INFRASTRUCTURE */}
-        <div className="w-80 h-0 left-[43.4375rem] top-[23.3125rem] absolute border-t-2 border-dotted border-[#1c6248] z-1"></div>
+        <div className="w-80 h-0 left-[43.4375rem] top-[23.3125rem] outline outline-2 outline-offset-[-0.0625rem] outline-[#1c6248] absolute   z-1"></div>
         <div className="w-80 h-0 left-[40.0rem] top-[23.5rem] absolute origin-top-left rotate-90 outline outline-2 outline-offset-[-0.0625rem] outline-[#1c6248] z-1"></div>
 
         {/* Progressive timeline lines*/}
@@ -225,12 +225,12 @@ function TimelineComponent() {
         <div className="w-28 h-28 left-[68.875rem] top-[19.875rem] absolute bg-white overflow-hidden flex items-center justify-center z-5">
           <img src="images/satellite.png" alt="Satellite" className="w-24 h-24 object-contain" />
         </div>
-        <div className="px-4 py-[0.3125rem] left-[45.125rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+        <div className="px-4 py-[0.3125rem] left-[58.5625rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
           <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
             Biomass Mobilisation
           </div>
         </div>
-        <div className="w-96 left-[46.5625rem] top-[32.3125rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5">
+        <div className="w-96 left-[52.5625rem] top-[32.3125rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5">
           <div className="w-96 text-right justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
             We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and logistics for industrial decarbonization.
           </div>
@@ -287,12 +287,12 @@ function TimelineComponent() {
             src="images/smoke.png"
             alt="Industrial"
           />
-          <div className="px-4 py-[0.3125rem] left-[51.75rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
+          <div className="px-4 py-[0.3125rem] left-[54.20rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5">
             <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">
               Industrial Decarbonization
             </div>
           </div>
-          <div className="w-96 left-[48.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5">
+          <div className="w-96 left-[52.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5">
             <div className="self-stretch text-right justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
               We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG
               dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
