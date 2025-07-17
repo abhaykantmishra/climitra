@@ -294,7 +294,7 @@ function TimelineComponent() {
           </div>
           <div className="w-96 left-[48.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5">
             <div className="self-stretch text-right justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-              We integrate into steel plants with dynamic engineered biofuel blending, real-time emissions tracking, and ESG
+              We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG
               dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
             </div>
           </div>
