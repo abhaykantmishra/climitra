@@ -6,9 +6,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const integrationItems = [
   {
     id: 0,
-    icon: "/images/Mask group (43).png",
+    icon: "/images/Mask group (103).png",
     title: "Verified Decarbonization Impact",
-    description: "1 ton of biochar saves up to 2.5 tons of CO₂ — with enhanced carbothermal efficiency over coal.",
+    description: "Every ton of coal replaced with biochar saves up to 2.5 tons of CO₂ — with enhanced carbothermal efficiency over coal.",
   },
   {
     id: 1,
@@ -21,14 +21,14 @@ const integrationItems = [
     icon: "/images/Mask group (42).png",
     title: "Precision-Engineered Biochar",
     description:
-      "Each batch is customized across 25+ parameters to meet plant-specific specs like ash content, volatile matter, ash, moisture, and fixed carbon.",
+      "Each batch is customized across 25+ parameters to meet plant-specific specs like calorific value, ash content, volatile matter, ash, moisture, and fixed carbon.",
   },
   {
     id: 3,
     icon: "/images/Mask group (44).png",
     title: "Commercially Competitive",
     description:
-      "Designed to compete with fossil fuels on both performance and reliability — without compromising industrial margins.",
+      "Designed to compete with fossil fuels on both performance and reliability — without compromising financial margins.",
   },
 ]
 

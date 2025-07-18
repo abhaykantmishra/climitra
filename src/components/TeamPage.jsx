@@ -45,10 +45,9 @@ const TeamPage = () => {
               Our Team
             </h1>
           </div>
-          <div className="w-full max-w-[29.25rem] mt-[1.5rem] sm:mt-[2rem] md:mt-[2.5rem] flex items-center justify-center">
+          <div className="w-full mt-[1.5rem] sm:mt-[2rem] md:mt-[2.5rem] flex items-center justify-center">
             <p className="text-white text-[1rem] sm:text-[1.25rem] md:text-[1.5rem] leading-[100%] font-semibold font-montserrat text-center">
-              Driven by <span className="text-white">Purpose.</span> Defined by
-              People.
+              Driven by Purpose. Defined by People.
             </p>
           </div>
         </div>

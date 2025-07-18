@@ -18,7 +18,7 @@ const cardsData = [
   {
     title: 'Coal Replaced',
     from: 0,
-    to: 3.8,
+    to: 4,
     unit: 'M+ Ton',
     image: 'images/screw.png',
   },
@@ -39,8 +39,8 @@ const AnimatedImpact = () => {
   const timerRef = useRef(null);
 
   const format = (val, unit) => {
-    if (unit.includes('M')) return `${val.toFixed(1)} ${unit}`;
-    return `${Math.round(val).toLocaleString()} ${unit}`;
+    if (unit.includes('M')) return `${val.toFixed(0)}${unit}`;
+    return `${Math.round(val).toLocaleString()}${unit}`;
   };
 
   const animateValues = (from, to, duration = 1200, animateYear = false) => {

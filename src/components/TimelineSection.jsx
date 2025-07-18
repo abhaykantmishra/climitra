@@ -11,17 +11,15 @@ const TimelineSection = () => {
         <div className="w-80 h-0 left-[43.4375rem] top-[68.875rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-zinc-100"></div>
         <img className="w-24 h-24 left-[74.5rem] top-[20.5rem] absolute" src="images/satellite.png" alt="" />
         <div className="px-4 py-[0.3125rem] left-[45.125rem] top-[28.0rem] absolute bg-emerald-50 inline-flex justify-center items-center gap-2.5 overflow-hidden">
-          <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">Biomass Mapping and Mobilisation</div>
+          <div className="justify-start text-[#1c6248] text-2xl font-semibold font-['Montserrat'] leading-7">Biomass Mobilisation</div>
         </div>
         <div className="w-96 left-[46.5625rem] top-[32.3125rem] absolute inline-flex flex-col justify-start items-start gap-5">
           <div className="w-96 text-right justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-            We digitize biomass supply chains using AI-led satellite mapping and local intel,
-            mobilizing 1,000+ tons/day to meet industrial specs—solving visibility, quality,
-            and logistics at scale for steel decarbonization.
+             We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and logistics for industrial decarbonization.
           </div>
         </div>
 
-        <button className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[41.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden">
+        <button className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[42.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden">
           <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">Know More</span>
         </button>
         <button className="w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden">
