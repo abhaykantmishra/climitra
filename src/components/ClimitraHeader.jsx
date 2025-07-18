@@ -20,14 +20,14 @@ const ClimitraHeader = ({
   return (
     <>
       {/* HEADER */}
-      <div className={`absolute top-[4.375rem] w-full px-4 sm:px-6 md:px-4 lg:px-[2.375rem] xl:px-[6.25rem] 2xl:px-[8.75rem]`} style={{ zIndex }}>
+      <div className={`absolute top-[1.375rem] sm:top-[4.375rem] w-full px-4 sm:px-6 md:px-4 lg:px-[2.375rem] xl:px-[6.25rem] 2xl:px-[8.75rem]`} style={{ zIndex }}>
         <div className="flex items-center w-full">
           {/* Logo */}
           <img
             onClick={() => handleNavigation("home")}
             src="/images/mask-group.svg"
             alt="Climitra Logo"
-            className="w-16 sm:w-20 md:w-24 lg:w-28 h-auto object-contain hover:cursor-pointer"
+            className="w-20 sm:w-20 md:w-24 lg:w-28 h-auto object-contain hover:cursor-pointer"
           />
 
           {/* Navbar */}
