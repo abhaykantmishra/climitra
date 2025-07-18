@@ -135,14 +135,13 @@ function TimelineComponent() {
   }, [])
 
   return (
-    <div className="w-full h-full bg-white mb-2 px-2 sm:px-4 lg:px-6 hidden lg:block">
+    <div className="w-full bg-white mb-2 px-2 sm:px-4 lg:px-6">
       <div
         ref={timelineRef}
-        className="w-full relative bg-white mx-auto"
+        className="w-full min-h-[200vh] sm:min-h-[220vh] md:min-h-[240vh] lg:min-h-[255vh] relative bg-white mx-auto"
         style={{
           maxWidth: "none",
-          // width: "100vw",
-          height: "110rem",
+          width: "100vw",
           marginLeft: "calc(-50vw + 50%)",
           paddingLeft: "calc(50vw - 50%)",
           paddingRight: "calc(50vw - 50%)",
@@ -405,7 +404,7 @@ function TimelineComponent() {
             className={`w-0 h-60 left-[40.0rem] top-[50.1875rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-lime-500 z-1 timeline-line-grow-vertical ${visibleSections.includes(1) ? "visible" : ""}`}
           ></div>
           <div
-            className={`w-0 h-60 left-[40.0rem] top-[70.875rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-lime-500 z-1 timeline-line-grow-vertical ${visibleSections.includes(2) ? "visible" : ""}`}
+            className={`w-0 h-64 left-[40.0rem] top-[70.875rem] absolute outline outline-2 outline-offset-[-0.0625rem] outline-lime-500 z-1 timeline-line-grow-vertical ${visibleSections.includes(2) ? "visible" : ""}`}
           ></div>
 
           {/* SECTION 1 - Biomass Mapping (Always visible) */}
