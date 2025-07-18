@@ -20,7 +20,7 @@ const ClimitraHeader = ({
   return (
     <>
       {/* HEADER */}
-      <div className={`absolute top-[4.375rem] w-full px-4 sm:px-6 md:px-8 lg:px-[4.375rem] xl:px-[6.25rem] 2xl:px-[8.75rem]`} style={{ zIndex }}>
+      <div className={`absolute top-[4.375rem] w-full px-4 sm:px-6 md:px-4 lg:px-[2.375rem] xl:px-[6.25rem] 2xl:px-[8.75rem]`} style={{ zIndex }}>
         <div className="flex items-center w-full">
           {/* Logo */}
           <img
@@ -31,14 +31,16 @@ const ClimitraHeader = ({
           />
 
           {/* Navbar */}
-          <Navbar />
+          <div className='hidden custom:block'>
+            <Navbar />
+          </div>
 
           {/* Spacer */}
           <div className="flex-grow" />
 
           {/* Hamburger Menu for mobile */}
           <button
-            className="block md:hidden text-white ml-2"
+            className="block custom:hidden text-white ml-2"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <svg
@@ -64,7 +66,7 @@ const ClimitraHeader = ({
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className={`absolute top-[8.125rem] left-0 w-full bg-teal-900 flex flex-col items-center gap-4 py-6 md:hidden`} style={{ zIndex: zIndex + 10 }}>
+        <div className={`absolute top-[8.125rem] left-0 w-full bg-teal-900 flex flex-col items-center gap-4 py-6 custom:hidden`} style={{ zIndex: zIndex + 10 }}>
           {menuItems.map((item) => (
             <div
               key={item.label}

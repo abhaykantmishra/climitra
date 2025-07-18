@@ -11,6 +11,8 @@ const ContactUs = () => {
     subject: "",
     query: "",
   });
+  
+ const url = "https://script.google.com/macros/s/AKfycbxDOQCwQsHAaO3e6QFiw4r_DySurVPkkl0uZniqsuyYxM--_lzp0fXVqAxrFlKgTZvBdw/exec"
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -22,8 +24,23 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
+    fetch(url, {
+      method: "POST",
+      body: formData,
+    }).then((response) => {
+      if (response.ok) {
+        setFormData({
+          name: "",
+          email: "",
+          description: "",
+          subject: "",
+          query: "",
+        });
+      }
+    }).catch((error) => {
+      console.error("Error submitting form:", error);
+  });
+}
 
   return (
     <div className="bg-[rgba(253,253,253,1)] flex flex-col overflow-hidden">
