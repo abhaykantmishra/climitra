@@ -5,6 +5,7 @@ export default {
     extend: {
       screens: {
         'mobile': {'max': '430px'}, // iPhone 16 Pro Max and similar
+        custom: "900px", 
       },
       colors: {
         "climitra-green": "#1C6248",
