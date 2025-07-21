@@ -32,7 +32,7 @@ const IndustrialPage = () => {
     {
       icon: "/images/Mask group (42).png",
       title: "Precision-Engineered Biochar",
-      description: "Each batch is customized across 25+ parameters to meet plant-specific specs like calorific value, ash content, volatile matter, and particle size.",
+      description: "Each batch is customized across 25+ parameters to meet plant-specific requirements like calorific value, ash content, volatile matter, and particle size.",
     },
      {
       icon: "/images/Mask group (104).png",
@@ -121,12 +121,17 @@ const IndustrialPage = () => {
       <div className="max-w-[80rem] w-full mx-auto px-4 md:px-8">
         {/* Section Title */}
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="font-montserrat text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0C0C0C] leading-tight mb-4 max-w-4xl mx-auto">
-            <span className="text-[#0C0C0C]">The Perfect Storm: Why </span>
-            <span className="text-[#1C6248]">Decarbonization</span>
-            <span className="text-[#0C0C0C]"> Can't Wait</span>
-          </h2>
-          <div className="w-[12.4375rem] h-[0.25rem] bg-[#1C6248] mx-auto"></div>
+          <h2 className="font-montserrat text-3xl md:text-2xl custom:text-3xl lg:text-[2.17rem] font-semibold text-[#0C0C0C] leading-tight mb-4 mx-auto">
+  <span className="text-[#0C0C0C]">The Perfect Storm:&nbsp;</span>
+  <span className="relative inline-block text-[#1C6248] pb-1">
+    <span className="text-[#0C0C0C]"> Why </span>
+    Decarbonization
+    <span className="absolute left-[-6px] bottom-0 w-[80%] h-[0.25rem] bg-[#1C6248]" />
+  </span>
+  <span className="text-[rgb(12,12,12)]">&nbsp;Can't Wait</span>
+</h2>
+
+          
         </div>
 
         {/* Main Content Container */}
@@ -265,8 +270,8 @@ const IndustrialPage = () => {
               <h3 className="text-white font-montserrat font-semibold text-lg sm:text-xl md:text-[1.375rem] leading-[120%] mb-2 sm:mb-[0.75rem]">
                 32 million tons annual biochar demand potential
               </h3>
-              <p className="text-[#6C6C6C] font-montserrat text-sm sm:text-base md:text-[1rem] font-bold leading-[120%]">
-                (Ministry of Steel)
+              <p className="text-white  font-montserrat text-sm sm:text-base md:text-[1rem] font-semibold leading-[120%]">
+                Source: Ministry of Steel
               </p>
             </div>
           </div>
@@ -485,10 +490,10 @@ const IndustrialPage = () => {
               //   color: '#FFFFFF',
               //   width: '688px',
               //   height: '22px',
-                fontFamily: 'Montserrat',
-              //   fontWeight: 400,
+                fontFamily: 'Sofia Pro',
+                fontWeight: 400,
               //   fontStyle: 'normal',
-              //   fontSize: '22px',
+                fontSize: '22px',
                 // lineHeight: '22px',
               //   letterSpacing: '0',
               //   marginBottom: '0.875rem',
@@ -500,7 +505,7 @@ const IndustrialPage = () => {
               //   justifyContent: 'center',
               }}
             >
-              Industrial-grade biochar engineered for steel and cement industries.
+              Industrial-grade biochar engineered for steel industries.
             </p>
             <p className="font-sofia text-xl md:text-2xl lg:text-3xl text-center text-semibold text-white">
               <span
@@ -509,9 +514,9 @@ const IndustrialPage = () => {
                   // width: '328px',
                   // height: '22px',
                   fontFamily: 'Sofia Pro',
-                  fontWeight: 600,
+                  fontWeight: 400,
                   // fontStyle: 'normal',
-                  // fontSize: '22px',
+                  fontSize: '22px',
                   // lineHeight: '22px',
                   // letterSpacing: '0',
                   // display: 'inline-block',
@@ -521,12 +526,12 @@ const IndustrialPage = () => {
                 Proven globally. Ready for India.
               </span>
             </p>
-            <button onClick={() => handleNavigation("contact")} className="bg-[#1C6248] my-5 md:my-10 text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
+            <button onClick={() => handleNavigation("contact")} className="bg-[#1C6248] my-5 md:my-14 text-white font-montserrat text-[1rem] font-bold px-[1.375rem] py-[0.75rem] rounded-[0.5rem] hover:bg-[#0F4D36] transition-colors">
               <span
                 style={{
                   color: '#FFFFFF',
-                  width: '183px',
-                  height: '20px',
+                  width: '180px',
+                  height: '16px',
                   fontFamily: 'Montserrat',
                   fontWeight: 600,
                   fontStyle: 'normal',

@@ -31,17 +31,17 @@ function TimelineComponent() {
     // Step 4: Move left to second section
     { progress: 0.35, x: 15.0625, y: 46.375, sections: [0, 1], boxType: "biomass" },
     // Step 5: Move back to center - reveal section 3 earlier
-    { progress: 0.45, x: 36.625, y: 46.375, sections: [0, 1, 2], boxType: "engineered biofuel" },
+    { progress: 0.45, x: 36.625, y: 46.375, sections: [0, 1, 2], boxType: "biochar" },
     // Step 6: Move down to third level
-    { progress: 0.55, x: 36.625, y: 68.875, sections: [0, 1, 2], boxType: "engineered biofuel" },
+    { progress: 0.55, x: 36.625, y: 67.875, sections: [0, 1, 2], boxType: "engineered biofuel" },
     // Step 7: Split - main box moves right, reveal section 4 earlier
     { progress: 0.65, x: 62.955, y: 67.875, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
     // Step 8: Continue parallel movement
-    { progress: 0.75, x: 36.625, y: 67.875, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
+    { progress: 0.75, x: 36.625, y: 67.875, sections: [0, 1, 2, 3], boxType: "biochar" },
     // Step 9: Move down to fourth level
-    { progress: 0.85, x: 36.625, y: 88.125, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
+    { progress: 0.85, x: 36.625, y: 88.125, sections: [0, 1, 2, 3], boxType: "biofertilizer" },
     // Step 10: Final position - left
-    { progress: 1, x: 15.375, y: 88.125, sections: [0, 1, 2, 3], boxType: "engineered biofuel" },
+    { progress: 1, x: 15.375, y: 88.125, sections: [0, 1, 2, 3], boxType: "biofertilizer" },
   ]
 
   useEffect(() => {
@@ -135,7 +135,7 @@ function TimelineComponent() {
   }, [])
 
   return (
-    <div className="w-full h-full bg-white mb-2 px-2 sm:px-4 lg:px-6 hidden lg:block">
+    <div className="w-full h-full bg-white mb-2 px-2 sm:px-4 lg:px-6 hidden lg:block overflow-x-auto">
       <div
         ref={timelineRef}
         className="w-full relative bg-white mx-auto"
@@ -380,7 +380,7 @@ function TimelineComponent() {
                   ? "Biomass"
                   : boxType === "engineered biofuel"
                     ? "Engineered Biofuel"
-                    : "Biochar"}
+                    : boxType==="biofertilizer"?"Biofertilizer":"Biochar"}
               </div>
             </div>
           )}
@@ -421,7 +421,7 @@ function TimelineComponent() {
             <img src="images/satellite.png" alt="Satellite" className="w-24 h-24 object-contain float-animation" />
           </div>
           <div
-            className={`px-4 py-[0.3125rem] left-[58.5625rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 visible`}
+            className={`py-[0.3125rem] left-[59.9625rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 visible`}
           >
             <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
               Biomass Mobilisation
@@ -449,7 +449,7 @@ function TimelineComponent() {
 
           {/* SECTION 2 - Bespoke Conversion Technology */}
           <div
-            className={`w-28 h-28 left-[36.625rem] top-[43.8125rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(1) ? "visible" : ""}`}
+            className={`w-28 h-28 left-[36.625rem] top-[43.8125rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(1) ? "visible" : ""} pulse-glow`}
           >
             <img src="/images/timeline-item.svg" alt="Timeline Item" className="w-28 h-28 object-contain" />
           </div>
@@ -460,7 +460,7 @@ function TimelineComponent() {
               alt="Fire"
             />
             <div
-              className={`px-4 py-[0.3125rem] left-[5.5rem] top-[51.875rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden fly-in-left stagger-1 ${visibleSections.includes(1) ? "visible" : ""}`}
+              className={`py-[0.3125rem] left-[5.5rem] top-[51.875rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden fly-in-left stagger-1 ${visibleSections.includes(1) ? "visible" : ""}`}
             >
               <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
                 Bespoke Conversion Technology
@@ -493,7 +493,7 @@ function TimelineComponent() {
 
           {/* SECTION 3 - Industrial Decarbonization */}
           <div
-            className={`w-28 h-28 left-[36.625rem] top-[65.4375rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(2) ? "visible" : ""}`}
+            className={`w-28 h-28 left-[36.625rem] top-[65.4375rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(2) ? "visible" : ""} pulse-glow`}
           >
             <img src="/images/timeline-item.svg" alt="Timeline Item" className="w-28 h-28 object-contain" />
           </div>
@@ -504,7 +504,7 @@ function TimelineComponent() {
               alt="Industrial"
             />
             <div
-              className={`px-4 py-[0.3125rem] left-[54.20rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`py-[0.3125rem] left-[56.20rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
                 Industrial Decarbonization
@@ -514,15 +514,15 @@ function TimelineComponent() {
               className={`w-96 left-[52.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <div className="self-stretch text-right justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-                We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG
-                dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
+                We integrate into industrial operations with dynamic biochar blending, real-time emissions tracking, and ESG
+                dashboards fully aligned with CBAM, CCTS, and green steel compliance pathways.
               </div>
             </div>
             <button
               onClick={() => {
                 handleNavigation("industrial")
               }}
-              className={`w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.75rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More
@@ -537,7 +537,7 @@ function TimelineComponent() {
 
           {/* SECTION 4 - Carbon Market Integration */}
           <div
-            className={`w-28 h-28 left-[36.625rem] top-[85.6875rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(3) ? "visible" : ""}`}
+            className={`w-28 h-28 left-[36.625rem] top-[85.6875rem] absolute bg-white rounded-full overflow-hidden flex items-center justify-center z-50 fly-in-bounce ${visibleSections.includes(3) ? "visible" : ""} pulse-glow`}
           >
             <img src="/images/timeline-item.svg" alt="Timeline Item" className="w-28 h-28 object-contain" />
           </div>
@@ -548,7 +548,7 @@ function TimelineComponent() {
               alt="Carbon"
             />
             <div
-              className={`px-4 py-[0.3125rem] left-[5.875rem] top-[93.8125rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-left stagger-1 ${visibleSections.includes(3) ? "visible" : ""}`}
+              className={` py-[0.3125rem] left-[5.875rem] top-[93.8125rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-left stagger-1 ${visibleSections.includes(3) ? "visible" : ""}`}
             >
               <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
                 Carbon Market Integration
@@ -558,15 +558,15 @@ function TimelineComponent() {
               className={`w-96 left-[5.875rem] top-[98.125rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-left stagger-2 ${visibleSections.includes(3) ? "visible" : ""}`}
             >
               <div className="self-stretch justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-                We generate high-integrity carbon removal credits through a digital MRV framework, enabling 100+ year
-                carbon sequestration and access to both voluntary and compliance markets.
+              We generate high-integrity carbon removal credits by integrating biochar directly into soil or converting it into bio-fertilizer, tracked through a digital MRV framework for 100+ year sequestration—unlocking both voluntary and compliance carbon markets.
+
               </div>
             </div>
             <button
               onClick={() => {
                 handleNavigation("cdr")
               }}
-              className={`w-32 h-10 px-5 py-3 left-[5.875rem] top-[106.875rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(3) ? "visible" : ""}`}
+              className={`w-32 h-10 px-5 py-3 left-[5.875rem] top-[107.875rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(3) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More

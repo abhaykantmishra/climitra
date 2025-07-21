@@ -167,6 +167,7 @@ const CDRPage = () => {
             Permanent atmospheric CO₂ extraction for net zero commitments
           </h1>
         </div>
+
       </div>
 
       {/* === Carosel Section with Background === */}
@@ -193,7 +194,7 @@ const CDRPage = () => {
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white font-montserrat mb-2 sm:mb-3 md:mb-4 leading-tight">
             Ready for High-Integrity Carbon Credits?
           </h2>
-          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia mb-1 sm:mb-2">
+          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia mb-1  sm:mb-2">
             Premium biochar-based CDR with full technological validation.
           </p>
           <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia font-semibold mb-4 sm:mb-6 md:mb-8 lg:mb-12">

@@ -19,7 +19,7 @@ const carouselItems = [
       icon: "images/temp.png",
       title: "Climate Stability",
       description:
-        "To limit warning to 1.5 C, we need both rapid emission cuts and large-scale carbon removal. CDR is not optional it's essential for climate stability.",
+        "To limit global warming to 1.5°C above pre-industrial levels, we need both deep emissions cuts and permanent carbon removal at scale. CDR is not optional it's essential for climate stability.",
     },
   ];
 
@@ -49,9 +49,7 @@ function CDRCarousel() {
         </h1>
         <div className="w-[6rem] md:w-[8.375rem] h-0.5 md:h-1 bg-[#1C6248] mx-auto mb-4 md:mb-6" />
         <p className="text-base md:text-xl text-[#6C6C6C] font-montserrat leading-6 md:leading-8 max-w-4xl mx-auto">
-          Carbon dioxide removal involves the deliberate extraction and long-term sequestration of atmospheric CO₂,
-          serving as an indispensable pillar for achieving net zero emissions by counterbalancing residual,
-          hard-to-abate emissions.
+          CDR removes and stores atmospheric CO₂, essential for offsetting emissions that can't be eliminated.
         </p>
       </div>
 

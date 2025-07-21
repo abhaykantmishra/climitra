@@ -39,7 +39,8 @@ const TimelineSection = () => {
         </div>
         <div className="w-96 left-[48.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5">
           <div className="self-stretch text-right justify-center text-neutral-500 text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
-            We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
+            We integrate into industrial operations with dynamic biochar blending, real-time emissions tracking, and ESG
+            dashboards fully aligned with CBAM, CCTS, and green steel compliance pathways.
           </div>
         </div>
         <button className="w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.25rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden">

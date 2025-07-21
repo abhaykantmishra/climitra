@@ -169,7 +169,7 @@ const url = "https://script.google.com/macros/s/AKfycbwCcYpwiTTAABEEt_2mBvOItRa1
                 <div>
                   <h3 className="text-climitra-green font-montserrat font-semibold text-[1.5rem] leading-[2.125rem]">Email</h3>
                   <p className="text-climitra-text font-montserrat font-semibold text-[1.25rem] leading-[1.775rem]">
-                    hello@climitra.com
+                    connect@climitra.com 
                   </p>
                 </div>
               </div>
