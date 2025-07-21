@@ -589,7 +589,7 @@ const TechPage = () => {
                     Live Operational Dashboards
                   </h3>
                   <p className="text-climitra-text font-montserrat text-base md:text-lg leading-relaxed mb-4 text-[22px] font-normal">
-                    Track biochar usage, blending ratios, and emissions in real time — enabling performance optimization
+                    Track biochar usage, blending ratios, and emissions in real time, enabling performance optimization
                     directly inside plant workflows.
                   </p>
                  
@@ -774,7 +774,7 @@ const TechPage = () => {
             {/* Feature Boxes */}
             <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-6">
               {/* Digital MRV System */}
-              <div className="flex flex-col sm:flex-row items-start gap-4 flex-1 max-w-full lg:max-w-[19.5625rem]">
+              <div className="flex flex-col sm:flex-row items-start gap-4 flex-1 max-w-full lg:max-w-[21.5625rem] ">
                 <div className="flex-shrink-0 mt-4">
                   <img src="/images/Mask group (34).png" alt="Digital MRV System Icon" className="w-12 h-12 filter" />
                 </div>
@@ -843,7 +843,7 @@ const TechPage = () => {
             <h2 className="text-white font-montserrat font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight text-center mb-4 md:mb-5">
               No Guesswork. Just Verified Carbon.
             </h2>
-            <p className="text-white font-sofia text-center text-base md:text-lg leading-normal max-w-3xl mx-auto mb-8 md:mb-10">
+            <p className="text-white font-sofia text-center text-base md:text-lg leading-normal max-w-[30rem] md:max-w-2xl ls:max-w-3xl mx-auto mb-8 md:mb-10">
               From satellite-based biomass mapping to digital MRV, Climitra ensures every ton removed is real,
               traceable, and credit-ready.
             </p>

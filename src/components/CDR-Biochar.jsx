@@ -77,8 +77,7 @@ export default function BiocharBenefits() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Biochar: Nature{"'"}s Carbon Vault</h2>
         <div className="w-20 h-1 mx-auto mb-8" style={{ backgroundColor: "#059669" }} />
         <p className="text-lg text-gray-600 mb-12">
-          Biochar converts biomass into stable, carbon-rich material through pyrolysis, locking away atmospheric CO₂ in
-          soil for centuries while enhancing ecosystem health.
+          Biomass is converted into stable, carbon-rich biochar through pyrolysis, storing atmospheric CO₂ in soil for centuries while improving soil and ecosystem health.
         </p>
       </div>
 

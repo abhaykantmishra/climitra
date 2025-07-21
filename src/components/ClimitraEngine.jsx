@@ -18,6 +18,13 @@ function ClimitraEngine() {
   const timelineRef = useRef(null);
   const engineRef = useRef(null);
 
+  const handleNavigation = (page) => {
+    if (window.navigateTo) {
+      window.navigateTo(page);
+      window.scrollTo(0, 0);
+    }
+  };
+
   // Intersection Observer for timeline animation trigger
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -85,18 +92,22 @@ function ClimitraEngine() {
     title: "Uttarakhand",
     subtitle: "Lantana camara",
     badge: "Coming Soon",
+    hoverContent:"Tackling forest degradation and fire risk by converting invasive Lantana into high-value biochar"
   },
   {
     img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/6b12783ee2f81663334c50ab55a560fdb37dff93?placeholderIfAbsent=true",
     title: "Punjab",
     subtitle: "Rice stubble",
     badge: "Coming Soon",
+    hoverContent : "Preventing crop burning by turning Rice stubble into biochar for decarbonization and carbon credits."
+
   },
   {
     img: "images/image-101.png",
     title: "Gujarat",
     subtitle: "Prosopis juliflora",
     badge: "Coming Soon",
+    hoverContent:"Restoring degraded land and replacing coal in industry using biochar from invasive Prosopis juliflora."
   },
 ];
 
@@ -119,7 +130,7 @@ const scrollToEngine = () => {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#011b12e5] to-[#00000000] z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(28,98,72,0.8)] to-[#00000000] z-0" />
 
         <ClimitraHeader 
           menuOpen={menuOpen}
@@ -138,7 +149,8 @@ const scrollToEngine = () => {
         {/* Hero Text */}
         <div className="absolute w-full top-[14.75rem] px-4 sm:px-6 md:px-8 flex flex-col items-center z-10">
           <h1 className="text-white font-semibold font-montserrat leading-tight text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl max-w-[57.6875rem] text-center mx-auto">
-            Unlocking India's giga-scale biomass opportunity
+            Unlocking India's giga-scale biomass
+            <br></br> opportunity
           </h1>
 
           {/* CTA Button */}
@@ -467,9 +479,9 @@ const scrollToEngine = () => {
 
       {/* CURRENT PROJECTS SECTION - Fixed width, 5.0rem gap, center-aligned */}
        <section className="w-full py-16 md:py-24 lg:py-32">
-        <div className="container mx-auto w-full max-w-[80.0rem] xl:max-h-[200vh] px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-semibold
-          font-montserrat tracking-tighter sm:text-4xl md:text-5xl text-gray-800">
+        <div className="container mx-auto w-full max-w-[80.0rem] xl:max-h-[200vh] px-4 md:px-20 text-center">
+          <h2 className="text-[36px] font-semibold
+          font-montserrat tracking-tighter leading-[44px] text-gray-800">
             Our <span className="text-[#1c6248]">Current</span> Projects
           </h2>
           <div className="h-1 w-24 bg-[#1c6248] mx-auto mt-4 mb-12" /> {/* Underline */}
@@ -483,12 +495,29 @@ const scrollToEngine = () => {
                   height={300}
                   className="object-cover w-full h-60 transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white group-hover:opacity-0">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                   <div className="absolute bottom-4 right-4 flex items-center justify-center w-8 h-8 rounded-full bg-white text-[#1c6248]">
                     <Plus className="w-4 h-4" />
                   </div>
                 </div>
+                <div
+    className="
+      absolute inset-0
+      bg-black/70      
+      flex items-center  
+      justify-center     
+      p-4 text-white
+      opacity-0
+      transition-opacity duration-300
+      group-hover:opacity-100
+    "
+  >
+    <div className="text-center">
+      {project.hoverContent}
+    </div>
+  </div>
+
               </div>
             ))}
           </div>
@@ -504,7 +533,7 @@ const scrollToEngine = () => {
           </h2>
           <div className="w-20 sm:w-24 md:w-32 h-1 bg-climitra-green mx-auto mt-3 sm:mt-4 md:mt-6"></div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[5.0rem] gap-y-[5.0rem] mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4 sm:px-8 lg:px-[10.9375rem] place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[5.0rem] gap-y-[5.0rem] mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4 sm:px-8 lg:px-[6.9375rem] xl:px-[10.9375rem] place-items-center">
             {[
               {
                 img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/b377c6313c9e46f2b7081d0c0609c2a6ea51713b?placeholderIfAbsent=true",
@@ -554,7 +583,9 @@ const scrollToEngine = () => {
                     </p>
                   </div>
                 </div>
-                <div onClick={() => handleNavigation(card?.link)} className="hover:cursor-pointer  flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
+                <div onClick={() => {
+                  console.log("onclicked", card?.link);
+                  handleNavigation(card?.link)}} className="hover:cursor-pointer  flex items-center justify-between px-4 h-[3.5rem] bg-climitra-green text-white font-semibold text-[0.9375rem] rounded-b-xl">
                   <span>{card.cta}</span>
                   <img
                     src={card.arrow}

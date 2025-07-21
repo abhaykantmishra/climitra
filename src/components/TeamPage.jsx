@@ -103,7 +103,7 @@ const TeamPage = () => {
                     activeTab === "advisors" ? "text-[#1C6248]" : "text-[#C9C9C8]"
                   }`}
                 >
-                  Advisors
+                  Advisor
                 </button>
                 {activeTab === "advisors" && (
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[1.2rem] sm:w-[1.4rem] md:w-[1.6875rem] h-1 bg-[#1C6248]"></div>
@@ -284,16 +284,20 @@ const TeamPage = () => {
                   </div>
 
                   {/* Designation */}
-                  <p
-                    className={`text-[#767676] text-[14px] sm:text-[15px] md:text-[16px] font-light font-montserrat leading-[24px] sm:leading-[27px] md:leading-[30px] ${isExpanded ? "text-center" : "text-center sm:text-left"}`}
-                  >
-                    Professor, IIT Bombay
-                  </p>
+                  {!isExpanded && (
+                    <>
+                      <p
+                        className={`text-[#767676] text-[14px] sm:text-[15px] md:text-[16px] font-light font-montserrat leading-[24px] sm:leading-[27px] md:leading-[30px] ${isExpanded ? "text-center" : "text-center sm:text-left"}`}
+                      >
+                        Professor, IIT Bombay
+                      </p>
                   <p
                     className={`text-[#767676] text-[14px] sm:text-[15px] md:text-[16px] font-light font-montserrat leading-[24px] sm:leading-[27px] md:leading-[30px] ${isExpanded ? "text-center" : "text-center sm:text-left"}`}
                   >
                     Founder, UrjanovaC
                   </p>
+                  </>
+                  )}
 
                   {/* Read More Button - only when not expanded */}
                   {!isExpanded && (
@@ -325,32 +329,7 @@ const TeamPage = () => {
               {isExpanded && (
                 <div className="text-center mb-6 sm:mb-7 md:mb-8 px-0 sm:px-4 md:-mx-[42px]">
                   <p className="text-[#6C6C6C] font-montserrat font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[24px] sm:leading-[27px] md:leading-[30px] text-center">
-                    Prof. Vikram Vishal serves as a Professor in the Department
-                    of Earth Sciences, and the Centre for Climate Studies, at
-                    IIT Bombay. His academic journey includes various roles at
-                    MIT, Stanford University, Monash University, IIT Roorkee,
-                    IIT Bhubaneswar along with professional stints at Tata Steel
-                    and Shell. He is the Convener of the DST-National Centre of
-                    Excellence in CCUS, and is also the founder and CEO of
-                    UrjanovaC Private Limited - a clean energy and net-zero
-                    solutions company.
-                    <br />
-                    <br />
-                    Prof. Vishal specializes in decarbonization and enhanced
-                    energy recovery. He engages as a CCUS Expert and a Knowledge
-                    Partner to lead Indian industries, multiple ministries and
-                    chairs two subcommittees on CCUS at the Bureau of Indian
-                    Standards. He also serves as the key National Expert on CCUS
-                    and CO₂ removal for intergovernmental negotiations at the
-                    IPCC.
-                    <br />
-                    <br />
-                    Prof. Vishal holds recognition from all major science
-                    academies in India. A three-time national award and two-time
-                    Fulbright fellowship recipient, he has authored over a
-                    hundred scientific research publications, a dozen national
-                    and international S&T roadmaps, and has received five
-                    patents.
+Prof. Vikram Vishal is a Professor at the Department of Earth Sciences and Centre for Climate Studies, IIT Bombay. He is the Convener of the DST-National Centre of Excellence in CCUS and India’s key expert on CO₂ removal at the IPCC. He is also the Founder and CEO of UrjanovaC Private Limited, a clean energy and net-zero solutions company.
                   </p>
 
                   {/* Close Button - positioned below the paragraph */}

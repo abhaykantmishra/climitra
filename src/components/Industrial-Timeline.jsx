@@ -2,12 +2,12 @@ function RegulatoryTimeline() {
   const timelineData = [
     {
       year: "2026",
-      title: "CBAM Penalties Begin",
+      title: " CBAM (EU) Penalties Begin",
       points: ["Carbon levy of $85-100 per tonne CO₂", "EU import taxes starting 1 January, 2026"],
     },
     {
       year: "2027",
-      title: "CCTS Full Implementation",
+      title: "CCTS(India) Full Implementation",
       points: [
         "Mandatory for 9 heavy industries including steel",
         "Compliance cost $15-25/tonne",
@@ -15,11 +15,16 @@ function RegulatoryTimeline() {
       ],
     },
     {
+      year:"2028",
+      title: "Green Steel Procurement Policy (India)",
+      points: ["Govt to mandate tiered use of green-rated steel in public projects", "Targets: 20% (3-star), 5% (4-star), 1% (5-star) for projects > ₹1 crore"],
+    },
+    {
       year: "2030",
-      title: "NDC Emissions Targets",
+      title: "NDC Emissions Targets(India)",
       points: [
-        "Overall 45% carbon intensity reduction over 2005 levels",
-        "Steel: ~50% intensity reduction via cleaner fuels, energy efficiency",
+        "45% carbon intensity reduction compared to 2005 levels",
+        "Steel: ~50% emissions reduction via cleaner fuels, energy efficiency",
       ],
     },
     {
@@ -73,7 +78,7 @@ function RegulatoryTimeline() {
             {/* Title */}
             <div className="absolute left-0 top-[19.25rem] w-[13.625rem] h-[3.75rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                CBAM Penalties Begin
+                CBAM (EU) Penalties Begin
               </span>
             </div>
             {/* Top Content */}
@@ -81,13 +86,13 @@ function RegulatoryTimeline() {
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                  Carbon levy of $85-100 per tonne CO₂
+                  EU import taxes starting 1 January, 2026
                 </p>
               </div>
               <div className="flex items-start gap-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                  EU import taxes starting 1 January, 2026
+                  Carbon levy of $85-100 per tonne CO₂
                 </p>
               </div>
             </div>
@@ -107,7 +112,7 @@ function RegulatoryTimeline() {
             {/* Title */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[0.625rem] w-[13.625rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                CCTS Full Implementation
+                CCTS Full (India) Implementation
               </span>
             </div>
             {/* Bottom Content */}
@@ -115,19 +120,13 @@ function RegulatoryTimeline() {
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                  Mandatory for 9 heavy industries including steel
+                Carbon market compliance becomes mandatory for 9 heavy industries, including steel
                 </p>
               </div>
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                  Compliance cost $15-25/tonne
-                </p>
-              </div>
-              <div className="flex items-start gap-[0.625rem]">
-                <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
-                <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
-                  Unified registry for voluntary + compliance markets
+                Estimated compliance cost: $15–25/tonne CO₂
                 </p>
               </div>
             </div>
@@ -147,7 +146,7 @@ function RegulatoryTimeline() {
             {/* Title */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[19.6875rem] w-[13.625rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                NDC Emissions Targets
+                NDC Emissions Targets (India)
               </span>
             </div>
             {/* Top Content */}
@@ -155,13 +154,13 @@ function RegulatoryTimeline() {
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                  Overall 45% carbon intensity reduction over 2005 levels
+                  45% carbon intensity reduction compared to 2005 levels
                 </p>
               </div>
               <div className="flex items-start gap-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                  Steel: ~50% intensity reduction via cleaner fuels, energy efficiency
+                  Steel: ~50% emissions reduction via cleaner fuels, energy efficiency
                 </p>
               </div>
             </div>
