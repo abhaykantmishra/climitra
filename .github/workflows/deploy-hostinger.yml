@@ -25,6 +25,6 @@ jobs:
           server: 91.108.107.74
           username: u774597600
           password: Climitra@1234
-          server-dir: /home/domains/climitra.com/public_html/
+          server-dir: /domains/climitra.com/public_html/
           local-dir: ./dist/
          
