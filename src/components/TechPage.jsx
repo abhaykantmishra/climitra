@@ -407,7 +407,7 @@ const TechPage = () => {
               />
             </div>
             {/* Feature Cards Layout */}
-            <div className="relative lg:absolute inset-0 flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4 mt-8 lg:mt-0">
+            <div className="relative lg:absolute inset-0 flex flex-col lg:flex lg:flex-col md:gap-x-8 md:gap-y-4 mt-8 md:mt-0">
               {/* Top Left Card - Digitally Controlled Pyrolysis */}
               <div className="relative bg-white border border-climitra-green rounded-xl flex flex-col justify-center items-center p-4 md:p-6 mx-auto w-full max-w-xs lg:absolute lg:w-[13.125rem] lg:h-[19.25rem] lg:left-[4.25rem] lg:top-[17.875rem]">
                 <div className="flex flex-col items-center text-center w-full">
@@ -442,35 +442,35 @@ const TechPage = () => {
                 </div>
               </div>
               {/* Bottom Left Card - Industrial-Grade Biochar Quality */}
-              <div className="relative bg-white border border-climitra-green rounded-xl flex flex-col justify-center items-center p-4 md:p-6 mx-auto w-full max-w-xs lg:absolute lg:w-[13.0625rem] lg:h-[19.9375rem] lg:left-[25rem] lg:top-[35.375rem]">
-                <div className="flex flex-col items-center text-center w-full">
-                  <div className="border border-climitra-green rounded-lg flex justify-center items-center mb-4 w-12 h-12">
-                    <img src="/images/Mask group (38).png" alt="Quality Icon" className="object-contain w-8 h-8" />
+                <div className="relative bg-white border border-climitra-green rounded-xl flex flex-col justify-center items-center p-4 md:p-6 mx-auto w-full max-w-xs lg:absolute lg:w-[13.0625rem] lg:h-[19.9375rem] lg:left-[25rem] lg:top-[35.375rem]">
+                  <div className="flex flex-col items-center text-center w-full">
+                    <div className="border border-climitra-green rounded-lg flex justify-center items-center mb-4 w-12 h-12">
+                      <img src="/images/Mask group (38).png" alt="Quality Icon" className="object-contain w-8 h-8" />
+                    </div>
+                    <h4 className="font-montserrat text-climitra-dark text-center font-semibold text-base md:text-lg leading-tight mb-2">
+                      Industrial-Grade Biochar Quality
+                    </h4>
+                    <p className="font-montserrat text-[#5D5D5D] text-center text-xs md:text-sm leading-relaxed">
+                      Engineered to meet end-use requirements in heavy industry, with consistent output across 25+
+                      parameters including fixed carbon, ash, moisture and calorific value.
+                    </p>
                   </div>
-                  <h4 className="font-montserrat text-climitra-dark text-center font-semibold text-base md:text-lg leading-tight mb-2">
-                    Industrial-Grade Biochar Quality
-                  </h4>
-                  <p className="font-montserrat text-[#5D5D5D] text-center text-xs md:text-sm leading-relaxed">
-                    Engineered to meet end-use requirements in heavy industry, with consistent output across 25+
-                    parameters including fixed carbon, ash, moisture and calorific value.
-                  </p>
                 </div>
-              </div>
-              {/* Bottom Right Card - Real-Time Monitoring & Optimization */}
-              <div className="relative bg-white border border-climitra-green rounded-xl flex flex-col justify-center items-center p-4 md:p-6 mx-auto w-full max-w-xs lg:absolute lg:w-[13.125rem] lg:h-[19.9375rem] lg:right-[23.8125rem] lg:top-[35.375rem]">
-                <div className="flex flex-col items-center text-center w-full">
-                  <div className="border border-climitra-green rounded-lg flex justify-center items-center mb-4 w-12 h-12">
-                    <img src="/images/Mask group (37).png" alt="Monitoring Icon" className="object-contain w-8 h-8" />
+                {/* Bottom Right Card - Real-Time Monitoring & Optimization */}
+                <div className="relative bg-white border border-climitra-green rounded-xl flex flex-col justify-center items-center p-4 md:p-6 mx-auto w-full max-w-xs lg:absolute lg:w-[13.125rem] lg:h-[19.9375rem] lg:right-[23.8125rem] lg:top-[35.375rem]">
+                  <div className="flex flex-col items-center text-center w-full">
+                    <div className="border border-climitra-green rounded-lg flex justify-center items-center mb-4 w-12 h-12">
+                      <img src="/images/Mask group (37).png" alt="Monitoring Icon" className="object-contain w-8 h-8" />
+                    </div>
+                    <h4 className="font-montserrat text-climitra-dark text-center font-semibold text-base md:text-lg leading-tight mb-2">
+                      Real-Time Monitoring & Optimization
+                    </h4>
+                    <p className="font-montserrat text-[#5D5D5D] text-center text-xs md:text-sm leading-relaxed">
+                      IoT-enabled sensors track process performance and enable auto-adjustments for efficiency and
+                      quality.
+                    </p>
                   </div>
-                  <h4 className="font-montserrat text-climitra-dark text-center font-semibold text-base md:text-lg leading-tight mb-2">
-                    Real-Time Monitoring & Optimization
-                  </h4>
-                  <p className="font-montserrat text-[#5D5D5D] text-center text-xs md:text-sm leading-relaxed">
-                    IoT-enabled sensors track process performance and enable auto-adjustments for efficiency and
-                    quality.
-                  </p>
                 </div>
-              </div>
             </div>
             
             {/* Connecting Lines and Decorative Elements */}
@@ -837,8 +837,8 @@ const TechPage = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
+        <div  className="absolute inset-0 bg-black opacity-50"></div>
+        <div style={{fontFamily: 'Montserrat, sans-serif'}} className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center max-w-4xl mx-auto px-4 mt-0 md:-mt-10">
             <h2 className="text-white font-montserrat font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight text-center mb-4 md:mb-5">
               No Guesswork. Just Verified Carbon.

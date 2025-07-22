@@ -138,7 +138,7 @@ function DigitalMRVStandards() {
                   className={`w-16 h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 rounded-full flex items-center justify-center mb-4 md:mb-6 transition-colors duration-300 ${
                     isHighlighted
                       ? "bg-[#1C6248]"
-                      : "bg-slate-200 border border-[#C2C2C2]"
+                      : "bg-[#1C6248] border border-[#C2C2C2]"
                   }`}
                 >
                   <img

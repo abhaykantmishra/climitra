@@ -462,7 +462,7 @@ const IndustrialPage = () => {
           alt="Why Climitra Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
-        <div className="absolute inset-0 bg-[#0C0C0C] opacity-60 z-10"></div>
+        <div style={{fontFamily: 'Montserrat, sans-serif'}} className="absolute inset-0 bg-[#0C0C0C] opacity-60 z-10"></div>
 
         <div className="relative z-20 flex flex-col items-center justify-center h-full px-2">
           <div className="text-center">
@@ -485,12 +485,12 @@ const IndustrialPage = () => {
               Why Climitra?
             </h2>
             <p
-              className="font-sofia text-xl md:text-2xl lg:text-3xl text-center text-semibold text-white"
+              className="text-xl md:text-2xl lg:text-3xl text-center text-semibold text-white"
               style={{
               //   color: '#FFFFFF',
               //   width: '688px',
               //   height: '22px',
-                fontFamily: 'Sofia Pro',
+                fontFamily: 'Montserrat, sans-serif',
                 fontWeight: 400,
               //   fontStyle: 'normal',
                 fontSize: '22px',
@@ -513,7 +513,7 @@ const IndustrialPage = () => {
                   // color: '#FFFFFF',
                   // width: '328px',
                   // height: '22px',
-                  fontFamily: 'Sofia Pro',
+                  fontFamily: 'Montserrat, sans-serif',
                   fontWeight: 400,
                   // fontStyle: 'normal',
                   fontSize: '22px',

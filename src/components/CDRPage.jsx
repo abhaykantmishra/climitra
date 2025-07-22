@@ -190,7 +190,7 @@ const CDRPage = () => {
       <div className="absolute inset-0 bg-[#0C0C0C] opacity-60"></div>
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+        <div style={{fontFamily: 'Montserrat, sans-serif'}} className="text-center max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white font-montserrat mb-2 sm:mb-3 md:mb-4 leading-tight">
             Ready for High-Integrity Carbon Credits?
           </h2>

@@ -112,7 +112,7 @@ function RegulatoryTimeline() {
             {/* Title */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[0.625rem] w-[13.625rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                CCTS Full (India) Implementation
+                CCTS (India) Implementation
               </span>
             </div>
             {/* Bottom Content */}

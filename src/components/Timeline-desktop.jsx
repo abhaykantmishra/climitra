@@ -135,14 +135,14 @@ function TimelineComponent() {
   }, [])
 
   return (
-    <div className="w-full h-full bg-white mb-2 px-2 sm:px-4 lg:px-6 hidden lg:block overflow-x-auto">
+    <div className="w-full h-full  bg-white mb-2 px-2 sm:px-4 lg:px-6 hidden lg:block overflow-x-auto overflow-y-hidden">
       <div
         ref={timelineRef}
         className="w-full relative bg-white mx-auto"
         style={{
           maxWidth: "none",
           // width: "100vw",
-          height: "110rem",
+          height: "125rem",
           marginLeft: "calc(-50vw + 50%)",
           paddingLeft: "calc(50vw - 50%)",
           paddingRight: "calc(50vw - 50%)",
@@ -430,7 +430,7 @@ function TimelineComponent() {
           <div
             className={`w-96 left-[52.5625rem] top-[32.3125rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 visible`}
           >
-            <div className="w-96 text-right justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
+            <div className="w-96 text-left justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
               We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral
               mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and
               logistics for industrial decarbonization.
@@ -440,7 +440,7 @@ function TimelineComponent() {
             onClick={() => {
               handleNavigation("tech")
             }}
-            className={`w-40 h-10 px-5 py-3 left-[66.5625rem] top-[42.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 visible hover:scale-105 transition-transform`}
+            className={`w-40 h-10 px-5 py-3 my-5 left-[66.5625rem] top-[42.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 visible hover:scale-105 transition-transform`}
           >
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
@@ -478,7 +478,7 @@ function TimelineComponent() {
               onClick={() => {
                 handleNavigation("tech")
               }}
-              className={`w-40 h-10 px-5 py-3 left-[5.5rem] top-[64.9375rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(1) ? "visible" : ""}`}
+              className={`w-40 h-10 px-5 py-3 my-5 left-[5.5rem] top-[64.9375rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(1) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More
@@ -513,7 +513,7 @@ function TimelineComponent() {
             <div
               className={`w-96 left-[52.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 ${visibleSections.includes(2) ? "visible" : ""}`}
             >
-              <div className="self-stretch text-right justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
+              <div className="self-stretch text-left justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
                 We integrate into industrial operations with dynamic biochar blending, real-time emissions tracking, and ESG
                 dashboards fully aligned with CBAM, CCTS, and green steel compliance pathways.
               </div>
@@ -522,7 +522,7 @@ function TimelineComponent() {
               onClick={() => {
                 handleNavigation("industrial")
               }}
-              className={`w-40 h-10 px-5 py-3 left-[66.5625rem] top-[85.75rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`w-40 h-10 px-5 py-3 my-5 left-[66.5625rem] top-[85.75rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More
@@ -566,7 +566,7 @@ function TimelineComponent() {
               onClick={() => {
                 handleNavigation("cdr")
               }}
-              className={`w-32 h-10 px-5 py-3 left-[5.875rem] top-[107.875rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(3) ? "visible" : ""}`}
+              className={`w-32 h-10 px-5 py-3 my-5 left-[5.875rem] top-[107.875rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(3) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More

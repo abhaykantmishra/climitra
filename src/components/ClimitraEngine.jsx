@@ -92,14 +92,14 @@ function ClimitraEngine() {
     title: "Uttarakhand",
     subtitle: "Lantana camara",
     badge: "Coming Soon",
-    hoverContent:"Tackling forest degradation and fire risk by converting invasive Lantana into high-value biochar"
+    hoverContent:<p>Tackling forest degradation and fire risk by converting invasive <span className="italic">Lantana</span> into high-value biochar</p>,
   },
   {
     img: "https://cdn.builder.io/api/v1/image/assets/fa40ec4c4f874f5487270f37d6db6a59/6b12783ee2f81663334c50ab55a560fdb37dff93?placeholderIfAbsent=true",
     title: "Punjab",
     subtitle: "Rice stubble",
     badge: "Coming Soon",
-    hoverContent : "Preventing crop burning by turning Rice stubble into biochar for decarbonization and carbon credits."
+    hoverContent : <p>Preventing crop burning by turning <span className="italic">Rice stubble</span> into biochar for decarbonization and carbon credits.</p>
 
   },
   {
@@ -107,7 +107,7 @@ function ClimitraEngine() {
     title: "Gujarat",
     subtitle: "Prosopis juliflora",
     badge: "Coming Soon",
-    hoverContent:"Restoring degraded land and replacing coal in industry using biochar from invasive Prosopis juliflora."
+    hoverContent:<p>Restoring degraded land and replacing coal in industry using biochar from invasive <span className="italic">Prosopis juliflora.</span></p>
   },
 ];
 
@@ -118,7 +118,7 @@ const scrollToEngine = () => {
   return (
     <div className="bg-[rgba(253,253,253,1)] flex flex-col overflow-hidden">
       {/* HERO SECTION */}
-      <div className="relative w-full h-[38.1875rem] overflow-hidden">
+      <div className="relative min-h-screen w-full h-[38.1875rem] overflow-hidden">
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -514,7 +514,9 @@ const scrollToEngine = () => {
     "
   >
     <div className="text-center">
-      {project.hoverContent}
+      <p>
+        {project.hoverContent}
+      </p>
     </div>
   </div>
 
