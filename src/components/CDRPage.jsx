@@ -162,11 +162,18 @@ const CDRPage = () => {
         />
 
         {/* Hero Text */}
-        <div className="absolute w-full top-[14.75rem] px-4 sm:px-6 md:px-8 flex flex-col items-center z-30">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4 pointer-events-none">
           <h1 className="text-white font-semibold font-montserrat leading-tight text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl max-w-[57.6875rem] text-center mx-auto">
             Permanent atmospheric CO₂ extraction for net zero commitments
           </h1>
         </div>
+
+        {/* <div className="absolute inset-0 flex items-center justify-center z-20 px-4 pointer-events-none">
+          <h1 className="font-montserrat text-white text-center font-semibold text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl mx-auto pointer-events-auto">
+            Permanent atmospheric CO₂ extraction
+            for net zero commitments
+          </h1>
+        </div> */}
 
       </div>
 

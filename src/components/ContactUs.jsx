@@ -109,7 +109,7 @@ const url = "https://script.google.com/macros/s/AKfycbwCcYpwiTTAABEEt_2mBvOItRa1
       />
 
         {/* HERO TEXT */}
-        <div className="absolute w-full top-[14.75rem] px-4 sm:px-6 md:px-8 flex flex-col items-center z-10">
+        <div className="absolute inset-0 w-full px-4 sm:px-6 md:px-8 flex flex-col items-center justify-center z-0">
           <div className="w-[21.25rem] h-[4.5rem] flex justify-center items-center">
             <h1 className="text-white text-[2.9rem] sm:text-[3.75rem] font-semibold font-montserrat leading-[120%] text-center">
               Contact Us

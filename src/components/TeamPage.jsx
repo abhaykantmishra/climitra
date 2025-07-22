@@ -39,7 +39,7 @@ const TeamPage = () => {
           zIndex={20}
         />
 
-        <div className="absolute w-full top-[10rem] sm:top-[12rem] md:top-[15.1381rem] px-4 flex flex-col items-center z-20">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4 pointer-events-none">
           <div className="w-full max-w-[18.875rem] flex items-center justify-center">
             <h1 className="text-white text-[2rem] sm:text-[2.5rem] md:text-[3.75rem] leading-[120%] font-semibold font-montserrat text-center">
               Our Team
