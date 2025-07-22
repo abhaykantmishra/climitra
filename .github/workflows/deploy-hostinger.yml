@@ -22,9 +22,9 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.climitra.com
-          username: u774597600.testuser
-          password: Password@climitra0
+          server: ftp://91.108.107.74
+          username: u774597600
+          password: Climitra@1234
           server-dir: /
           local-dir: ./dist/
          
