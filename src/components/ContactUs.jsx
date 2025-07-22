@@ -81,7 +81,7 @@ const url = "https://script.google.com/macros/s/AKfycbwCcYpwiTTAABEEt_2mBvOItRa1
     <div className="bg-[rgba(253,253,253,1)] flex flex-col overflow-hidden">
       {showSuccess && <SuccessModal onClose={() => setShowSuccess(false)} />}
       {/* HERO SECTION */}
-      <div className="relative w-full h-[27.1875rem] sm:h-[38.1875rem] overflow-hidden">
+      <div className="relative min-h-screen w-full h-[27.1875rem] sm:h-[38.1875rem] overflow-hidden">
         <img
           className="absolute inset-0 w-full h-full object-cover"
           src="/images/contact.png"
