@@ -193,7 +193,11 @@ const scrollToEngine = () => {
               lineHeight: 'clamp(1.125rem, 5vw, 1.5rem)', 
               padding: '0 clamp(0.5rem, 3vw, 1rem)' 
             }}>
-              Building a <span className="text-teal-800 font-semibold">vertically integrated ecosystem</span> for waste biomass-driven industrial decarbonization and carbon dioxide removal (CDR) in India
+              India's only{" "} 
+              <span className="text-[#1c6248] font-['Montserrat'] leading-loose font-semibold">vertically integrated ecosystem </span>
+              {" "}
+              for waste biomass-driven industrial decarbonization and carbon dioxide removal (CDR) in India 
+              {/* <span className="text-teal-800 font-semibold">vertically integrated ecosystem</span> for waste biomass-driven industrial decarbonization and carbon dioxide removal (CDR) in India */}
             </p>
           </div>
 
@@ -367,7 +371,7 @@ const scrollToEngine = () => {
                 outlineColor: '#65a30d',
                 outlineOffset: 'clamp(-1px, -0.3vw, -2px)'
               }}>
-                <div className="text-center justify-start leading-none">Engineered Biofuel</div>
+                <div className="text-center justify-start leading-none">Engineered Biofertilizer</div>
               </div>
               <div className="absolute right-0 top-20 flex flex-col items-end gap-2" style={{ 
                 width: 'clamp(240px, 70vw, 281.395px)', 
@@ -434,7 +438,7 @@ const scrollToEngine = () => {
                 outlineColor: '#65a30d',
                 outlineOffset: 'clamp(-1px, -0.3vw, -2px)'
               }}>
-                <div className="text-center justify-start leading-none">Engineered Biofuel</div>
+                <div className="text-center justify-start leading-none">Biofertilizer</div>
               </div>
               <div className="absolute right-0 top-20 flex flex-col items-end gap-2" style={{ 
                 width: 'clamp(240px, 70vw, 281.395px)', 
