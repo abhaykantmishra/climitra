@@ -260,7 +260,9 @@ const scrollToEngine = () => {
                   fontSize: 'clamp(10px, 3vw, 12px)',
                   lineHeight: 'clamp(14px, 4.2vw, 16px)'
                 }}>
-                   We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and logistics for industrial decarbonization.
+                  We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral
+                  mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and
+                  logistics for industrial decarbonization.
                 </p>
                 <button onClick={() => {handleNavigation("tech")}} className="bg-teal-800 text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
@@ -327,7 +329,8 @@ const scrollToEngine = () => {
                   fontSize: 'clamp(10px, 3vw, 12px)',
                   lineHeight: 'clamp(14px, 4.2vw, 16px)'
                 }}>
-                  We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+ industrial parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
+                  We build advanced pyrolysis systems tailored to local biomass, delivering consistent quality across 25+
+                  parameters including calorific value, volatile matter, ash, moisture, and fixed carbon.
                 </p>
                 <button onClick={() => {handleNavigation("tech")}} className="bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
@@ -371,7 +374,7 @@ const scrollToEngine = () => {
                 outlineColor: '#65a30d',
                 outlineOffset: 'clamp(-1px, -0.3vw, -2px)'
               }}>
-                <div className="text-center justify-start leading-none">Engineered Biofertilizer</div>
+                <div className="text-center justify-start leading-none">Engineered Biofuel</div>
               </div>
               <div className="absolute right-0 top-20 flex flex-col items-end gap-2" style={{ 
                 width: 'clamp(240px, 70vw, 281.395px)', 
@@ -394,7 +397,8 @@ const scrollToEngine = () => {
                   fontSize: 'clamp(10px, 3vw, 12px)',
                   lineHeight: 'clamp(14px, 4.2vw, 16px)'
                 }}>
-                  We integrate into steel plants with dynamic biochar blending, real-time emissions tracking, and ESG dashboards—fully aligned with CBAM, CCTS, and green steel compliance pathways.
+                  We integrate into industrial operations with dynamic biochar blending, real-time emissions tracking, and ESG
+                  dashboards fully aligned with CBAM, CCTS, and green steel compliance pathways.
                 </p>
                 <button onClick={() => {handleNavigation("industrial")}} className="bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
@@ -461,7 +465,7 @@ const scrollToEngine = () => {
                   fontSize: 'clamp(10px, 3vw, 12px)',
                   lineHeight: 'clamp(14px, 4.2vw, 16px)'
                 }}>
-                  We generate high-integrity carbon removal credits through a digital MRV framework, enabling 100+ year carbon sequestration and access to both voluntary and compliance markets.
+                  We generate high-integrity carbon removal credits by integrating biochar directly into soil or converting it into bio-fertilizer, tracked through a digital MRV framework for 100+ year sequestration—unlocking both voluntary and compliance carbon markets.
                 </p>
                 <button onClick={() => {handleNavigation("cdr")}} className="hover:cursor-pointer  bg-[#1c6248] text-white rounded-lg font-medium font-montserrat flex items-center justify-center whitespace-nowrap" style={{
                   padding: 'clamp(6px, 2vw, 8px) clamp(8px, 3vw, 12px)',
