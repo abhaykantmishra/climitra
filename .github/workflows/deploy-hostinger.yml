@@ -25,6 +25,6 @@ jobs:
           server: ftp.climitra.com
           username: u774597600.testuser
           password: Password@climitra0
-          server-dir: /public_html/
+          server-dir: /
           local-dir: ./dist/
          
