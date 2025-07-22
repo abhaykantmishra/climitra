@@ -421,16 +421,16 @@ function TimelineComponent() {
             <img src="images/satellite.png" alt="Satellite" className="w-24 h-24 object-contain float-animation" />
           </div>
           <div
-            className={`py-[0.3125rem] left-[59.9625rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 visible`}
+            className={`py-[0.3125rem] left-[61.9625rem] top-[28.0rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 visible`}
           >
-            <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
+            <div className="justify-end text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
               Biomass Mobilisation
             </div>
           </div>
           <div
             className={`w-96 left-[52.5625rem] top-[32.3125rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 visible`}
           >
-            <div className="w-96 text-left justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
+            <div className="w-[26rem] text-right justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
               We mobilize over 1,000 tons of biomass everyday using AI models built on satellite imagery, hyperspectral
               mapping and local intel, enabling us to solve critical supply chain gaps in visibility, quality and
               logistics for industrial decarbonization.
@@ -440,7 +440,7 @@ function TimelineComponent() {
             onClick={() => {
               handleNavigation("tech")
             }}
-            className={`w-40 h-10 px-5 py-3 my-5 left-[66.5625rem] top-[42.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 visible hover:scale-105 transition-transform`}
+            className={`w-40 h-10 px-5 py-3 my-5 left-[68.5625rem] top-[42.0625rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 visible hover:scale-105 transition-transform`}
           >
             <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
               Know More
@@ -504,16 +504,16 @@ function TimelineComponent() {
               alt="Industrial"
             />
             <div
-              className={`py-[0.3125rem] left-[56.20rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`py-[0.3125rem] left-[58.20rem] top-[73.5625rem] absolute bg-teal-50 inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-right stagger-1 ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <div className="justify-start text-[#1c6248] responsive-text-2xl font-semibold font-['Montserrat'] leading-7 shimmer whitespace-nowrap">
                 Industrial Decarbonization
               </div>
             </div>
             <div
-              className={`w-96 left-[52.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`w-[26rem] left-[52.625rem] top-[77.875rem] absolute inline-flex flex-col justify-start items-start gap-5 z-5 fly-in-right stagger-2 ${visibleSections.includes(2) ? "visible" : ""}`}
             >
-              <div className="self-stretch text-left justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
+              <div className="self-stretch text-right justify-center text-neutral-500 responsive-text-lg font-normal font-['Source_Sans_Pro'] leading-snug tracking-wide">
                 We integrate into industrial operations with dynamic biochar blending, real-time emissions tracking, and ESG
                 dashboards fully aligned with CBAM, CCTS, and green steel compliance pathways.
               </div>
@@ -522,7 +522,7 @@ function TimelineComponent() {
               onClick={() => {
                 handleNavigation("industrial")
               }}
-              className={`w-40 h-10 px-5 py-3 my-5 left-[66.5625rem] top-[85.75rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
+              className={`w-40 h-10 px-5 py-3 my-5 left-[68.5625rem] top-[85.75rem] absolute bg-[#1c6248] rounded-lg outline outline-[0.075rem] outline-offset-[-0.075rem] outline-[#1c6248] inline-flex justify-center items-center gap-2.5 overflow-hidden z-5 fly-in-bounce stagger-3 hover:scale-105 transition-transform ${visibleSections.includes(2) ? "visible" : ""}`}
             >
               <span className="text-center text-white text-base font-medium font-['Montserrat'] whitespace-nowrap">
                 Know More

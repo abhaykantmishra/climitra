@@ -17,7 +17,7 @@ const TeamPage = () => {
   return (
     <div className="bg-[#FDFDFD] flex flex-col overflow-hidden">
       {/* HERO SECTION */}
-      <div className="relative w-full h-[38.1875rem] overflow-hidden">
+      <div className="relative min-h-screen w-full h-[38.1875rem] overflow-hidden">
         <img
           src="/images/Team_bg.png"
           alt="Team Hero Background"

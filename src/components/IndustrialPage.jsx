@@ -74,7 +74,7 @@ const IndustrialPage = () => {
   return (
     <div className="bg-[#FDFDFD] flex flex-col overflow-hidden">
       {/* HERO SECTION - Replaced */}
-      <div className="relative w-full h-[38.1875rem] overflow-hidden">
+      <div className="relative  min-h-screen w-full h-[38.1875rem] overflow-hidden">
         {/* Background Video */}
         <video
           src="/10447-224712880_medium.mp4"

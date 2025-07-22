@@ -145,7 +145,7 @@ function DigitalMRVStandards() {
                     src={feature.icon}
                     alt={feature.title}
                     className={`w-8 h-8 md:w-9 md:h-9 transition-filter duration-300 ${
-                      isHighlighted ? "filter brightness-0 invert" : ""
+                      isHighlighted ? "filter brightness-0 invert" : "filter brightness-0 invert"
                     }`}
                   />
                 </div>

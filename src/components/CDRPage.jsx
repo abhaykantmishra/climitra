@@ -133,7 +133,7 @@ const CDRPage = () => {
   return (
     <div className="bg-[#FDFDFD] flex flex-col overflow-hidden">
       {/* HERO SECTION */}
-      <div className="relative w-full h-[38.1875rem] overflow-hidden">
+      <div className="relative min-h-screen w-full h-[38.1875rem] overflow-hidden">
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -194,10 +194,10 @@ const CDRPage = () => {
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white font-montserrat mb-2 sm:mb-3 md:mb-4 leading-tight">
             Ready for High-Integrity Carbon Credits?
           </h2>
-          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia mb-1  sm:mb-2">
+          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-montserrat mb-1  sm:mb-2">
             Premium biochar-based CDR with full technological validation.
           </p>
-          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-sofia font-semibold mb-4 sm:mb-6 md:mb-8 lg:mb-12">
+          <p className="text-xs sm:text-sm md:text-lg lg:text-xl text-white font-montserrat font-semibold mb-4 sm:mb-6 md:mb-8 lg:mb-12">
             Measurable. Permanent. Independently verified.
           </p>
           <button

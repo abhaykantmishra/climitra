@@ -41,7 +41,7 @@ const TechPage = () => {
   return (
     <div className="bg-white flex flex-col overflow-hidden">
       {/* HERO SECTION */}
-      <div className="relative w-full h-[611px] overflow-hidden">
+      <div className="relative w-full min-h-screen h-[611px] overflow-hidden">
         {/* Background Video */}
         <video
           src="/88220-602915848_medium (1).mp4"
@@ -843,7 +843,7 @@ const TechPage = () => {
             <h2 className="text-white font-montserrat font-semibold text-2xl md:text-3xl lg:text-4xl leading-tight text-center mb-4 md:mb-5">
               No Guesswork. Just Verified Carbon.
             </h2>
-            <p className="text-white font-sofia text-center text-base md:text-lg leading-normal max-w-[30rem] md:max-w-2xl ls:max-w-3xl mx-auto mb-8 md:mb-10">
+            <p className="text-white font-montserrat text-center text-base md:text-lg leading-normal max-w-[30rem] md:max-w-2xl ls:max-w-3xl mx-auto mb-8 md:mb-10">
               From satellite-based biomass mapping to digital MRV, Climitra ensures every ton removed is real,
               traceable, and credit-ready.
             </p>
