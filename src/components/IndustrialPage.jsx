@@ -126,8 +126,9 @@ const IndustrialPage = () => {
   <span className="relative inline-block text-[#1C6248] pb-1">
     <span className="text-[#0C0C0C]"> Why </span>
     Decarbonization
-    <span className="absolute left-[-6px] bottom-0 w-[80%] h-[0.25rem] bg-[#1C6248]" />
+    <span className="hidden md:block md:absolute md:left-[-6px] md:bottom-0 w-[80%] h-[0.25rem] bg-[#1C6248]" />
   </span>
+  <span className="md:hidden flex flex-row justify-center mx-auto md:absolute md:left-[-6px] md:bottom-0 w-[80%] h-[0.25rem] bg-[#1C6248]" />
   <span className="text-[rgb(12,12,12)]">&nbsp;Can't Wait</span>
 </h2>
 

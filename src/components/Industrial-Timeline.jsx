@@ -58,7 +58,7 @@ function RegulatoryTimeline() {
         {/* Desktop Timeline Container */}
         <div className="hidden lg:block relative w-[66.5625rem] h-[33.375rem] mx-auto mt-[5rem]">
           {/* Main Timeline Line */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-[1065px] h-0 z-0">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-[1095px] h-0 z-0">
             <div className="w-full border-t-[4px] border-dashed border-[#1C6248] timeline-line-desktop relative">
               <div className="absolute right-[-1.25rem] top-[-0.825rem] w-0 h-0 border-l-[1.25rem] border-l-[#1C6248] border-t-[0.75rem] border-t-transparent border-b-[0.75rem] border-b-transparent"></div>
             </div>
@@ -132,7 +132,7 @@ function RegulatoryTimeline() {
             </div>
           </div>
 
-          {/* 2030 */}
+          {/* 2028 */}
           <div className="absolute left-[31.625rem] top-0 w-[18.5625rem] h-[22.375rem]">
             {/* Arrow Up */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(15.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
@@ -141,12 +141,12 @@ function RegulatoryTimeline() {
             </div>
             {/* Year Badge */}
             <div className="absolute top-[15.1875rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-              <span className="text-white font-montserrat text-[1.625rem] font-semibold">2030</span>
+              <span className="text-white font-montserrat text-[1.625rem] font-semibold">2028</span>
             </div>
             {/* Title */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[19.6875rem] w-[13.625rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                NDC Emissions Targets (India)
+                Green Steel Procurement Policy (India)
               </span>
             </div>
             {/* Top Content */}
@@ -154,20 +154,20 @@ function RegulatoryTimeline() {
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                  45% carbon intensity reduction compared to 2005 levels
+                  Govt to mandate tiered use of green-rated steel in public projects
                 </p>
               </div>
               <div className="flex items-start gap-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.875rem]">
-                  Steel: ~50% emissions reduction via cleaner fuels, energy efficiency
+                  Targets: 20% (3-star), 5% (4-star), 1% (5-star) for projects {'>'} ₹1 crore
                 </p>
               </div>
             </div>
           </div>
 
-          {/* 2070 */}
-          <div className="absolute left-[48.6875rem] top-[11.3125rem] w-[18rem] h-[18.5625rem]">
+          {/* 2030 */}
+          <div className="absolute left-[45.6875rem] top-[11.3125rem] w-[18rem] h-[18.5625rem]">
             {/* Arrow Down */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(4rem+3.375rem+1.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
@@ -175,16 +175,50 @@ function RegulatoryTimeline() {
             </div>
             {/* Year Badge */}
             <div className="absolute top-[4rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
-              <span className="text-white font-montserrat text-[1.625rem] font-semibold">2070</span>
+              <span className="text-white font-montserrat text-[1.625rem] font-semibold">2030</span>
             </div>
             {/* Title */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-[0.625rem] w-[13.625rem] text-center">
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-[0.625rem] w-[13.625rem] text-center">
               <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
-                Net Zero India
+                NDC Emissions Targets(India)
               </span>
             </div>
             {/* Bottom Content */}
             <div className="absolute left-0 top-[14.0rem] w-[18rem] h-[5.75rem]">
+              <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
+                <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
+                <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
+                  45% carbon intensity reduction compared to 2005 levels
+                </p>
+              </div>
+              <div className="flex items-start gap-[0.625rem]">
+                <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
+                <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
+                  Steel: ~50% emissions reduction via cleaner fuels, energy efficiency
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 2070 */}
+          <div className="absolute left-[61rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
+            {/* Arrow Up */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(14.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
+              <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
+              <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
+            </div>
+            {/* Year Badge */}
+            <div className="absolute top-[14.1875rem] left-1/2 transform -translate-x-1/2 w-[11.4375rem] h-[3.375rem] bg-[#1C6248] rounded-[1.4375rem] flex items-center justify-center">
+              <span className="text-white font-montserrat text-[1.625rem] font-semibold">2070</span>
+            </div>
+            {/* Title */}
+            <div className="absolute left-0 top-[19.25rem] w-[13.625rem] h-[3.75rem] text-center">
+              <span className="text-[#1C6248] font-montserrat text-[1.375rem] font-semibold leading-[1.875rem]">
+                Net Zero India
+              </span>
+            </div>
+            {/* Top Content */}
+            <div className="absolute left-0 top-0 w-[14.25rem] h-[7.125rem]">
               <div className="flex items-start gap-[0.625rem] mb-[0.625rem]">
                 <div className="w-[0.3125rem] h-[0.3125rem] bg-[#1C6248] rounded-full mt-[0.6875rem] flex-shrink-0"></div>
                 <p className="text-[#6C6C6C] font-montserrat text-[1rem] leading-[1.625rem]">
@@ -199,6 +233,7 @@ function RegulatoryTimeline() {
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Mobile Timeline Container */}
