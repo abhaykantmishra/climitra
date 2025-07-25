@@ -58,14 +58,14 @@ function RegulatoryTimeline() {
         {/* Desktop Timeline Container */}
         <div className="hidden lg:block relative w-[66.5625rem] h-[33.375rem] mx-auto mt-[5rem]">
           {/* Main Timeline Line */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-[1095px] h-0 z-0">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-[62rem] h-0 z-0">
             <div className="w-full border-t-[4px] border-dashed border-[#1C6248] timeline-line-desktop relative">
               <div className="absolute right-[-1.25rem] top-[-0.825rem] w-0 h-0 border-l-[1.25rem] border-l-[#1C6248] border-t-[0.75rem] border-t-transparent border-b-[0.75rem] border-b-transparent"></div>
             </div>
           </div>
 
           {/* 2026 */}
-          <div className="absolute left-[0.5rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
+          <div className="absolute left-[-1rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
             {/* Arrow Up */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(14.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
@@ -99,7 +99,7 @@ function RegulatoryTimeline() {
           </div>
 
           {/* 2027 */}
-          <div className="absolute left-[15.375rem] top-[9.4375rem] w-[17.5625rem] h-[23.9375rem]">
+          <div className="absolute left-[13.375rem] top-[9.4375rem] w-[17.5625rem] h-[23.9375rem]">
             {/* Arrow Down */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(5.9rem+3.375rem+1.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
@@ -133,7 +133,7 @@ function RegulatoryTimeline() {
           </div>
 
           {/* 2028 */}
-          <div className="absolute left-[31.625rem] top-0 w-[18.5625rem] h-[22.375rem]">
+          <div className="absolute left-[27.625rem] top-0 w-[18.5625rem] h-[22.375rem]">
             {/* Arrow Up */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(15.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
@@ -167,7 +167,7 @@ function RegulatoryTimeline() {
           </div>
 
           {/* 2030 */}
-          <div className="absolute left-[45.6875rem] top-[11.3125rem] w-[18rem] h-[18.5625rem]">
+          <div className="absolute left-[42.6875rem] top-[11.3125rem] w-[18rem] h-[18.5625rem]">
             {/* Arrow Down */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(4rem+3.375rem+1.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-[0.125rem] h-[2.9375rem] bg-[#1C6248]"></div>
@@ -201,7 +201,7 @@ function RegulatoryTimeline() {
           </div>
 
           {/* 2070 */}
-          <div className="absolute left-[61rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
+          <div className="absolute left-[58rem] top-[1rem] w-[14.25rem] h-[21.875rem]">
             {/* Arrow Up */}
             <div className="absolute left-1/2 transform -translate-x-1/2 top-[calc(14.1875rem-1.5625rem-3.5625rem)] w-[0.75rem] h-[3.5625rem] flex flex-col items-center">
               <div className="w-0 h-0 border-l-[0.375rem] border-l-transparent border-r-[0.375rem] border-r-transparent border-b-[0.625rem] border-b-[#1C6248]"></div>
