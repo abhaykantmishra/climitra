@@ -195,7 +195,7 @@ const TeamPage = () => {
       {
         name: "Sanat Vohra",
         img: "/images/Frame 1984078371.png",
-        imageHeight: "h-[235px] sm:h-[265px] md:h-[295px]",
+        imageHeight: "h-[235px] sm:h-[285px] md:h-[295px]",
         imgClass: "object-contain p-1 sm:p-1.5 md:p-2",
         marginTop: "-mt-1 sm:-mt-1.5 md:-mt-2",
         linkedin: "https://www.linkedin.com/in/sanatv/?originalSubdomain=in",
